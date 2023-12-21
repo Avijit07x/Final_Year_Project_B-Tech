@@ -4,11 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>ElectroKart | Home</title>
         <link rel="stylesheet" href="../Css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@400;700&display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@300;500&family=Ubuntu:wght@400;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -26,7 +27,7 @@
                 <!-- Top Nav Link Sections -->
                 <div class="nav-top-drop-down">
                     <ul class="nav-links">
-                        <li class="nav-link">
+                        <li class="nav-link" id="languageDropdown" onclick="toggleDropdown('languageDropdown')">
                             <a href="#">English
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
@@ -36,7 +37,7 @@
                                 <li><a href="#">Portuguese</a></li>
                             </ul>
                         </li>
-                        <li class="nav-link">
+                        <li class="nav-link" id="currencyDropdown" onclick="toggleDropdown('currencyDropdown')">
                             <a href="#">USD
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
@@ -47,7 +48,7 @@
                                 <li><a href="#">KWD</a></li>
                             </ul>
                         </li>
-                        <li class="nav-link">
+                        <li class="nav-link" id="settingsDropdown" onclick="toggleDropdown('settingsDropdown')">
                             <a href="#">Settings
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
@@ -65,12 +66,14 @@
             <nav class="navbar">
                 <a href="../Html/index.html"><img class="navbar-logo"
                         src="../assets/Logo/electrokart-logo-transparent.svg" alt=""></a>
+                <!-- Navbar Search -->
                 <div class="navbar-search">
                     <input type="search" name="" id="nav-search-box" placeholder="Search for Products...">
                     <span class="vertical-line"></span>
-                    <div class="nav-link text-black">
-                        <a href="#">Select Category
-                            <i class="fa-solid fa-angle-down"></i>
+                    <div class="nav-link text-black" id="categoryDropdown" onclick="toggleDropdown('categoryDropdown')">
+                        <a href="#">
+                            Select Category
+                            <i class="fas fa-angle-down"></i>
                         </a>
                         <ul class="drop-down">
                             <li>Option1</li>
@@ -82,6 +85,7 @@
                     </div>
                     <img class="cursor-pointer" src="../assets/svg/Search_alt.svg" alt="#">
                 </div>
+                <!-- Navbar Account Section -->
                 <div class="nav-account">
                     <a href="#" class="nav-account-logo cursor-pointer">
                         <img src="../assets/svg/Add-User.svg" alt="">
@@ -91,6 +95,7 @@
                         <p>Your Account</p>
                     </a>
                 </div>
+                <!-- Navbar Cart Area -->
                 <div class="nav-cart">
                     <a href="#"><svg _ngcontent-ng-c3631614527="" width="22" height="20" viewBox="0 0 22 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -124,8 +129,131 @@
                         <span class="nav-cart-number">0</span>
                     </a>
                 </div>
+                <!-- Navbar Hamburger -->
+                <span class="nav-hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="130" viewBox="0 0 448 512">
+                        <!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+                        <path fill="#130912"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </span>
             </nav>
+            <!-- Nav Bottom -->
+            <div class="nav-bottom">
+                <div class="nav-bottom-all-category cursor-pointer">
+                    <i class="fa-solid fa-bars-staggered" style="color: #000000;"></i>
+                    <span>All Categories</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="nav-bottom-items cursor-pointer">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li>
+                            Shop <i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li>
+                            Products <i class="fa-solid fa-angle-down"></i>
+                        </li>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-bottom-contact">
+                    <img src="../assets/svg/contact.svg" alt="">
+                    <div class="nav-bottom-contact-text">
+                        <p>Hotline:</p>
+                        <a href="" class=" blue-hover cursor-pointer">+(402) 763 282 46</a>
+                    </div>
+                </div>
+            </div>
         </header>
+        <!-- Main Content -->
+        <main>
+            <!-- hero Section -->
+            <div class="hero">
+
+            </div>
+            <!-- Product Category -->
+            <div class="product-category">
+                <div class="product-category-div">
+                    <a href="">
+                        <div>
+                            <img src="../assets/images/Product Category/product-cat-1.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="blue-hover">Headphones</a>
+                    <p>3 Product</p>
+                </div>
+                <div class="product-category-div">
+                    <a href="">
+                        <div>
+                            <img src="../assets/images/Product Category/product-cat-2.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="blue-hover">Mobile Tablets</a>
+                    <p>3 Product</p>
+                </div>
+                <div class="product-category-div">
+                    <a href="">
+                        <div>
+                            <img src="../assets/images/Product Category/product-cat-3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="blue-hover">CPU Heat Pipes</a>
+                    <p>3 Product</p>
+                </div>
+                <div class="product-category-div">
+                    <a href="">
+                        <div>
+                            <img src="../assets/images/Product Category/product-cat-4.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="blue-hover">Smart Watch</a>
+                    <p>3 Product</p>
+                </div>
+                <div class="product-category-div">
+                    <a href="">
+                        <div>
+                            <img src="../assets/images/Product Category/product-cat-5.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="blue-hover">Bluetooth</a>
+                    <p>3 Product</p>
+                </div>
+            </div>
+            <!-- Features-Area -->
+            <div class="features-area">
+                <div class="features-area-div">
+                    <img src="../assets/svg/big-car.svg" alt="">
+                    <div>
+                        <p>Free Delivery</p>
+                        <p>Orders from all item</p>
+                    </div>
+                </div>
+                <div class="features-area-div">
+                    <img src="../assets/svg/dollar.svg" alt="">
+                    <div>
+                        <p>Return & Refund</p>
+                        <p>Money back guarantee</p>
+                    </div>
+                </div>
+                <div class="features-area-div">
+                    <img src="../assets/svg/discount.svg" alt="">
+                    <div>
+                        <p>Member Discount</p>
+                        <p>One very order over $140.00</p>
+                    </div>
+                </div>
+                <div class="features-area-div">
+                    <img src="../assets/svg/contact-us.svg" alt="">
+                    <div>
+                        <p>Support 24/7</p>
+                        <p>Contact us 24 hours a day</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
         <script src="../Js/script.js"></script>
     </body>
 
