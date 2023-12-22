@@ -182,10 +182,12 @@ a {
 .nav-cart-number {
     background-color: #fd4b6b;
     color: white;
-    font-size: 13px;
-    height: 21px;
-    width: 21px;
-    padding: 1px 5px;
+    font-size: 12px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 21px;
     border: 3px solid white;
     border-radius: 50%;
     position: relative;
@@ -204,6 +206,7 @@ a {
     border-top: 1px solid #e5e7e8;
 }
 
+/* nav-bottom-all-category */
 .nav-bottom-all-category {
     display: flex;
     justify-content: center;
@@ -214,10 +217,11 @@ a {
     padding: 10px;
 }
 
-.nav-bottom-all-category span {
+.nav-bottom-all-category>span {
     margin: 0 10px;
 }
 
+/* Nav Bottom Items  */
 .nav-bottom-items {
     width: 600px;
     margin-right: 130px;
