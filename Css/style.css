@@ -203,6 +203,15 @@ a {
     stroke: #10d2f5;
 }
 
+.nav-cart {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
 .nav-cart-number {
     background-color: #fd4b6b;
     color: white;
@@ -214,9 +223,9 @@ a {
     line-height: 21px;
     border: 3px solid white;
     border-radius: 50%;
-    position: relative;
-    right: 11px;
-    bottom: 14px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -8px;
 }
 
 /* Nav Bottom */
