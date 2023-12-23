@@ -15,3 +15,13 @@ window.onclick = function (event) {
         }
     });
 }
+
+// Sticky nav
+document.addEventListener("scroll", () => {
+    let header = document.getElementById("sticky-nav")
+    if (window.scrollY > 140) {
+        header.classList.remove("sticky")
+    } else {
+        header.classList.add("sticky")
+    }
+})

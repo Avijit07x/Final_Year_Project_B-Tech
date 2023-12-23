@@ -26,6 +26,30 @@ a {
     color: currentColor;
 }
 
+/* Sticky Navbar */
+.header-nav {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    animation: fadeInDown 0.5s ease-in-out 0ms;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sticky {
+    display: none;
+}
+
+/* Top-Navbar */
 .nav-top {
     height: 33px;
     width: 100%;
