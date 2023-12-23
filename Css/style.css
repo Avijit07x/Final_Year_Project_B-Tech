@@ -390,13 +390,15 @@ a {
     .navbar-search,
     .nav-account,
     .nav-cart,
-    .nav-bottom {
+    .nav-bottom,
+    .header-nav {
         display: none;
     }
 
 
     .navbar {
-        /* position: fixed; */
+        position: sticky;
+        top: 0;
         height: 170px;
         padding: 20px 30px;
     }
