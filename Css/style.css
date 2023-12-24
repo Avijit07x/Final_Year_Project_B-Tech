@@ -245,7 +245,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 48px;
-    width: 200px;
+    width: 210px;
     background-color: #10d2f5;
     padding: 10px;
 }
@@ -337,6 +337,7 @@ a {
 }
 
 .product-category-div img {
+    object-fit: contain;
     height: 105px;
     width: 80px;
     transition: transform 0.3s ease-out;
