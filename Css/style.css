@@ -533,8 +533,9 @@ a {
     }
 
     .navbar .navbar-logo {
-        height: 150px;
+        height: 200px;
         width: 450px;
+        object-fit: contain;
     }
 
     .navbar .nav-hamburger {
