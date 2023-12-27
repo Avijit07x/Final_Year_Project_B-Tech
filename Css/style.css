@@ -241,6 +241,7 @@ a {
 
 /* nav-bottom-all-category */
 .nav-bottom-all-category {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -259,11 +260,11 @@ a {
 }
 
 .nav-bottom-all-category>ul {
-    width: 236px;
+    width: 100%;
     list-style: none;
     background-color: #fff;
     position: absolute;
-    top: 155px;
+    top: 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
