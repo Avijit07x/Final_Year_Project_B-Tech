@@ -19,6 +19,9 @@ html {
 
 .blue-hover:hover {
     color: #10d2f5;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 
 a {
@@ -201,6 +204,9 @@ a {
 .nav-cart a:hover #heart-icon #Stroke-3,
 .nav-cart a:hover svg path {
     stroke: #10d2f5;
+    transition: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
 }
 
 .nav-cart {
@@ -468,7 +474,6 @@ a {
 }
 
 /* Features-Area */
-
 .features-area {
     display: flex;
     justify-content: space-between;
@@ -495,9 +500,197 @@ a {
     font-weight: 400;
 }
 
+/* Trending Products Area */
+.trending-products {
+    width: 100%;
+    padding: 1% 6%;
+}
+
+.trending-products-header {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-products-header h1 {
+    color: #010f1c;
+    font-size: 44px;
+}
+
+.trending-products-header span {
+    width: 400px;
+    height: 1px;
+    background-color: rgb(219, 218, 218);
+}
+
+.trending-products-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.trending-products-header ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #767a7d;
+}
+
+.trending-products-product-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* Tending Products>>>>> Single product */
+.tp-product {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tp-product:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tp-product-out-of-stock {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #fd4b6b;
+    color: white;
+    width: 50%;
+    line-height: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tp-product:hover .tp-product-out-of-stock {
+    visibility: visible;
+    opacity: 1;
+    z-index: 4;
+    transform: translateX(-20px);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
 
 
+.tp-product:hover .tp-product-image {
+    transform: scale(1.1);
+}
 
+.tp-product .tp-product-image {
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    transition: transform 0.3s ease-out;
+}
+
+.tp-cart-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    top: 30%;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+}
+
+.tp-product:hover .tp-cart-area {
+    visibility: visible;
+    transform: translateX(-50px);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.tp-cart-area span {
+    padding: 7px 10px;
+}
+
+.tp-cart-area>span:nth-child(1) {
+    border-radius: 5px 5px 0 0;
+}
+
+.tp-cart-area>span:nth-child(3) {
+    border-radius: 0 0 5px 5px;
+}
+
+.tp-cart-area span:hover {
+    background-color: #010f1c;
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+}
+
+.tp-cart-area span:hover .lucide path,
+.tp-cart-area span:hover .lucide circle {
+    stroke: white;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.product-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 20px 30px;
+    border-top: 1px solid rgb(234, 231, 231);
+}
+
+.product-details>small:hover,
+.product-details div:nth-child(2):hover {
+    color: #0989FF;
+    transition: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+}
+
+
+.product-details small {
+    color: #767a7d;
+    font-size: 0.75rem;
+}
+
+.product-details div i {
+    color: #FFB21D;
+    font-size: 0.75rem;
+}
+
+.tp-product-old-price {
+    text-decoration: line-through;
+    font-size: 0.75rem;
+    color: #767a7d;
+}
+
+.tp-product-new-price {
+    color: #0989FF;
+}
 
 
 
