@@ -569,19 +569,19 @@ a {
 .tp-product-out-of-stock {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 10px;
     background-color: #fd4b6b;
     color: white;
-    width: 50%;
+    width: 45%;
     line-height: 16px;
-    padding: 5px 10px;
+    padding: 5px;
     border-radius: 5px;
     text-align: center;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
 }
 
-.tp-product:hover .tp-product-out-of-stock {
+/* .tp-product:hover .tp-product-out-of-stock {
     visibility: visible;
     opacity: 1;
     z-index: 4;
@@ -589,7 +589,7 @@ a {
     transition: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
-}
+} */
 
 
 .tp-product:hover .tp-product-image {
@@ -671,7 +671,6 @@ a {
     transition-timing-function: ease-out;
 }
 
-
 .product-details small {
     color: #767a7d;
     font-size: 0.75rem;
@@ -692,7 +691,75 @@ a {
     color: #0989FF;
 }
 
+/* Trending Products Banner*/
+.trending-products-banner-area {
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
+/* First Banner */
+.tp-first-banner {
+    width: 70%;
+    background: url(../assets/images/tranding-products/product-banner-1.jpg);
+    height: 260px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 5%;
+    color: #010f1c;
+}
+
+.tp-first-banner div:nth-child(2) {
+    width: 255px;
+    height: 70px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.29;
+    font-size: 1.8rem;
+}
+
+.tp-banner-btn i {
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.tp-banner-btn:hover i,
+.tp-banner-btn:hover span {
+    /* color: #10d2f5; */
+    transform: translateX(10px);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.tp-second-banner {
+    width: 30%;
+    background: url(../assets/images/tranding-products/product-banner-2.jpg);
+    height: 260px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 3%;
+    color: #010f1c;
+}
+
+.tp-second-banner div:first-child {
+    font-size: 1.4rem;
+}
 
 
 
