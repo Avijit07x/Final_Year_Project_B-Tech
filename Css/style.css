@@ -543,19 +543,20 @@ a {
     color: #767a7d;
 }
 
-/* .trending-products-product-area, .dod-products  */
+/* .trending-products-product-area, .dod-products,.ga-products-area  */
 .trending-products-product-area,
-.dod-products-area {
+.dod-products-area,
+.ga-products-area {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 35px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-/* Tending Products and dod products>>>>> Single product */
+/* Tending Products and dod products,ga-products>>>>> Single product */
 .tp-product,
-.dod-product {
+.dod-product,
+.ga-product {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -568,8 +569,13 @@ a {
     transition: all 0.2s 0s ease-out;
 }
 
+.ga-product {
+    flex-grow: 0;
+}
+
 .tp-product:hover,
-.dod-product:hover {
+.dod-product:hover,
+.ga-product:hover {
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
@@ -603,12 +609,12 @@ a {
 
 
 .tp-product:hover .tp-product-image,
-.dod-product:hover .dod-product-image {
+.dod-product:hover .dod-product-image,
+.ga-product:hover .ga-product-image {
     transform: scale(1.1);
 }
 
-.tp-product .tp-product-image,
-.dod-product .dod-product-image {
+.tp-product .tp-product-image {
     margin-top: 10px;
     width: 250px;
     height: 250px;
@@ -616,8 +622,25 @@ a {
     transition: transform 0.3s ease-out;
 }
 
+.dod-product .dod-product-image {
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    transition: transform 0.3s ease-out;
+}
+
+.ga-product .ga-product-image {
+    margin-top: 10px;
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    transition: transform 0.3s ease-out;
+}
+
 .tp-cart-area,
-.dod-cart-area {
+.dod-cart-area,
+.ga-cart-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -633,7 +656,8 @@ a {
 }
 
 .tp-product:hover .tp-cart-area,
-.dod-product:hover .dod-cart-area {
+.dod-product:hover .dod-cart-area,
+.ga-product:hover .ga-cart-area {
     visibility: visible;
     transform: translateX(-50px);
     transition: all;
@@ -642,22 +666,26 @@ a {
 }
 
 .tp-cart-area span,
-.dod-cart-area span {
+.dod-cart-area span,
+.ga-cart-area span {
     padding: 7px 10px;
 }
 
 .tp-cart-area>span:nth-child(1),
-.dod-cart-area>span:nth-child(1) {
+.dod-cart-area>span:nth-child(1),
+.ga-cart-area>span:nth-child(1) {
     border-radius: 5px 5px 0 0;
 }
 
 .tp-cart-area>span:nth-child(3),
-.dod-cart-area>span:nth-child(3) {
+.dod-cart-area>span:nth-child(3),
+.ga-cart-area>span:nth-child(3) {
     border-radius: 0 0 5px 5px;
 }
 
 .tp-cart-area span:hover,
-.dod-cart-area span:hover {
+.dod-cart-area span:hover,
+.ga-cart-area span:hover {
     background-color: #010f1c;
     transition: all;
     transition-duration: 0.6s;
@@ -667,7 +695,9 @@ a {
 .tp-cart-area span:hover .lucide path,
 .tp-cart-area span:hover .lucide circle,
 .dod-cart-area span:hover .lucide path,
-.dod-cart-area span:hover .lucide circle {
+.dod-cart-area span:hover .lucide circle,
+.ga-cart-area span:hover .lucide path,
+.ga-cart-area span:hover .lucide circle {
     stroke: white;
     transition: all;
     transition-duration: 0.3s;
@@ -675,7 +705,8 @@ a {
 }
 
 .product-details,
-.dod-product-details {
+.dod-product-details,
+.ga-product-details {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -686,34 +717,40 @@ a {
 }
 
 .product-details>small:hover,
-.dod-product-details>small:hover,
 .product-details div:nth-child(2):hover,
-.dod-product-details div:nth-child(2):hover {
+.dod-product-details>small:hover,
+.dod-product-details div:nth-child(2):hover,
+.ga-product-details>small:hover,
+.ga-product-details div:nth-child(2):hover {
     color: #0989FF;
     transition: all 250ms ease-out;
 }
 
 .product-details small,
-.dod-product-details small {
+.dod-product-details small,
+.ga-product-details small {
     color: #767a7d;
     font-size: 0.75rem;
 }
 
 .product-details div i,
-.dod-product-details div i {
+.dod-product-details div i,
+.ga-product-details div i {
     color: #FFB21D;
     font-size: 0.75rem;
 }
 
 .tp-product-old-price,
-.dod-product-old-price {
+.dod-product-old-price,
+.ga-product-old-price {
     text-decoration: line-through;
     font-size: 0.75rem;
     color: #767a7d;
 }
 
 .tp-product-new-price,
-.dod-product-new-price {
+.dod-product-new-price,
+.ga-product-new-price {
     color: #0989FF;
 }
 
@@ -752,19 +789,22 @@ a {
     font-size: 1.8rem;
 }
 
-.tp-banner-btn {
-    width: 90px;
+.tp-banner-btn,
+.ga-banner-btn {
+    width: 150px;
 }
 
 .tp-banner-btn i,
-.dod-all-deals i {
+.dod-all-deals i,
+.ga-banner-btn i {
     margin-left: 6px;
     transition: all 0.3s ease-out;
 }
 
 .tp-banner-btn:hover i,
 .tp-banner-btn:hover span,
-.dod-all-deals:hover i {
+.dod-all-deals:hover i,
+.ga-banner-btn:hover i {
     transform: translateX(7px);
     transition: all 0.3s ease-out;
 }
@@ -854,6 +894,109 @@ a {
 .dod-date-time li span {
     font-size: 1rem;
 }
+
+/* <!-- ===========Electronics Gadgets Area============ --> */
+.gadgets-area {
+    background-color: #fff;
+    padding: 6%;
+    display: flex;
+}
+
+.gadget-banner {
+    background-color: #fff;
+    height: fit-content;
+    width: 30%;
+    margin-right: 20px;
+    position: sticky;
+    top: 74px;
+}
+
+.ga-first-banner {
+    background-color: #fff;
+    position: relative;
+    padding: 30px;
+    width: 348px;
+    border-radius: 10px;
+    border: 2px solid #fd4b6b;
+    overflow: hidden;
+}
+
+.ga-first-banner div:first-child {
+    font-size: 1.3rem;
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1.5px solid #0989FF;
+}
+
+.ga-first-banner ul {
+    margin: 15px 0;
+    list-style-position: inside;
+    font-weight: 500;
+    font-size: 0.89rem;
+    color: #55585B;
+}
+
+.ga-first-banner ul li {
+    margin-bottom: 10px;
+}
+
+.ga-first-banner img {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+}
+
+.ga-banner-btn span {
+    font-size: 0.89rem;
+}
+
+.ga-second-banner {
+    margin-top: 10px;
+    background: url(../assets/images/electronics-gadgets/gadget-banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 348px;
+    border-radius: 10px;
+    padding: 50px 25px;
+}
+
+.ga-second-banner span {
+    color: white;
+    font-size: 0.90rem;
+}
+
+.ga-second-banner>div {
+    color: white;
+    font-size: 1.2rem;
+    width: 215px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
