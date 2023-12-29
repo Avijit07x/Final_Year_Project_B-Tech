@@ -1,4 +1,31 @@
+/* univershal style for product page. */
 *{
     margin: 0;
     padding: 0;
+}
+header{
+    height: 112px;
+    width: 100%;
+    background-color: blue;
+}
+/* productpage bredcrab style */
+.productpage-breadcrumbs{
+    padding-top: 40px;
+    padding-left: 100px;
+}
+.productpage-breadcrumbs i{
+    color :gray;
+}
+.productpage-dot{
+    color: gray;
+    font-size: 1.5cm;
+}
+.productpage-breadcrumbs a{
+    color: gray;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-size: large;
+}
+#current-product a{
+    color: rgb(30, 29, 29);
 }
