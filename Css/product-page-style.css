@@ -29,3 +29,63 @@ header{
 #current-product a{
     color: rgb(30, 29, 29);
 }
+/* Product details area style */
+.productpage-product-details-area{
+    display: flex;
+    justify-content: space-around;
+    height: 985px;
+    width: 100%;
+    background-color: aqua;
+}
+.productpage-product-image-left{
+    display: flex;
+    justify-content: space-evenly;
+    height: 670px;
+    width: 726px;
+    background-color: red;
+}
+.productpage-product-description-right{
+    height: 870px;
+    width: 526px;
+    background-color: rgb(93, 152, 101);
+}
+.product-mini-image-area{
+    height: 670px;
+    width: 88px;
+    
+}
+.product-main-image-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 670px;
+    width: 580px;
+    background-color: #f5f6f8;
+}
+.product1-blue-headphone{
+   display: flex;
+    height: 85px;
+    width: 100 px;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f8;
+}
+.product1-black-headphone{
+    display: flex;
+    height: 85px;
+    width: 100 px;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f8;
+}
+.product1-orange-headphone{
+    display: flex;
+    height: 85px;
+    width: 100 px;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f8;
+}
