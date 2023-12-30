@@ -569,10 +569,6 @@ a {
     transition: all 0.2s 0s ease-out;
 }
 
-.ga-product {
-    flex-grow: 0;
-}
-
 .tp-product:hover,
 .dod-product:hover,
 .ga-product:hover {
@@ -900,6 +896,7 @@ a {
     background-color: #fff;
     padding: 6%;
     display: flex;
+    gap: 18px;
 }
 
 .gadget-banner {
@@ -909,6 +906,10 @@ a {
     margin-right: 20px;
     position: sticky;
     top: 74px;
+}
+
+.ga-products-area {
+    width: 100%;
 }
 
 .ga-first-banner {
