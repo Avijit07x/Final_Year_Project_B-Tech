@@ -236,6 +236,7 @@ a {
 
 /* Nav Bottom */
 .nav-bottom {
+    background-color: #fff;
     width: 100%;
     height: 48px;
     padding: 0px 5.8%;
@@ -429,6 +430,7 @@ a {
 
 /* Product Category */
 .product-category {
+    background-color: #fff;
     width: 100%;
     padding: 4% 6%;
     display: flex;
@@ -479,6 +481,7 @@ a {
 
 /* Features-Area */
 .features-area {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -506,6 +509,7 @@ a {
 
 /* Trending Products Area */
 .trending-products {
+    background-color: #fff;
     width: 100%;
     padding: 1% 6%;
 }
@@ -752,6 +756,7 @@ a {
 
 /* Trending Products Banner*/
 .trending-products-banner-area {
+    background-color: #fff;
     padding: 2% 6%;
     display: flex;
     justify-content: space-between;
@@ -916,7 +921,8 @@ a {
     background-color: #fff;
     position: relative;
     padding: 30px;
-    width: 348px;
+    width: 100%;
+    min-width: 348px;
     border-radius: 10px;
     border: 2px solid #fd4b6b;
     overflow: hidden;
@@ -958,7 +964,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
-    width: 348px;
+    min-width: 348px;
+    width: 100%;
     border-radius: 10px;
     padding: 50px 25px;
 }
@@ -975,13 +982,85 @@ a {
     margin-top: 5px;
 }
 
+/*<!-- ===========Gadgets Area Slider=========== --> */
+.gadgets-slider-area {
+    padding: 1% 6%;
+}
 
+.ga-slider {
+    background-color: #0989ff;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.ga-slider-subtitle {
+    color: #fffc;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
 
+.ga-slider-title {
+    color: white;
+    font-size: 3rem;
+    width: 400px;
+    margin-bottom: 10px;
+}
 
+.ga-slider-old-price {
+    text-decoration: line-through;
+    color: #ffffffb3;
+    margin-bottom: 10px;
+}
 
+.ga-slider-new-price {
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 15px;
+}
 
+.ga-slider-btn {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    transition: all 0.3s ease-out;
+}
 
+.ga-slider-btn:hover {
+    background-color: #fff;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+.ga-slider-image {
+    position: relative;
+}
+
+.ga-slider-image>img {
+    position: relative;
+    width: 370px;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.ga-slider-img-bg {
+    position: absolute;
+    background-color: #0c78f4;
+    top: -30px;
+    left: -50px;
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+}
 
 
 
