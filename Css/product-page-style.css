@@ -1,91 +1,86 @@
 /* univershal style for product page. */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     height: 112px;
     width: 100%;
     background-color: blue;
 }
+
 /* productpage bredcrab style */
-.productpage-breadcrumbs{
-    padding-top: 40px;
-    padding-left: 100px;
+.productpage-breadcrumbs {
+  margin: 1% 5% ;
 }
-.productpage-breadcrumbs i{
-    color :gray;
+
+.productpage-breadcrumbs i {
+    color: gray;
 }
-.productpage-dot{
+
+.productpage-dot {
     color: gray;
     font-size: 1.5cm;
 }
-.productpage-breadcrumbs a{
+
+.productpage-breadcrumbs a {
     color: gray;
     text-decoration: none;
     font-family: 'Baloo Bhai 2', sans-serif;
     font-size: large;
 }
-#current-product a{
+
+#current-product a {
     color: rgb(30, 29, 29);
 }
+
 /* Product details area style */
-.productpage-product-details-area{
+.productpage-product-details-area {
     display: flex;
-    justify-content: space-around;
     height: 985px;
-    width: 100%;
+    width: 90%;
+    margin: 1% 5%;
     background-color: aqua;
 }
 .productpage-product-image-left{
     display: flex;
-    justify-content: space-evenly;
     height: 670px;
-    width: 726px;
-    background-color: red;
+    width: 50%;
 }
 .productpage-product-description-right{
+    display: flex;
     height: 870px;
-    width: 526px;
-    background-color: rgb(93, 152, 101);
+    width: 50%;justify-content: flex-end;
+
+    background-color: green;
 }
 .product-mini-image-area{
-    height: 670px;
-    width: 88px;
-    
+    height: 670;
+    width: 15%;
+    min-width: 90px;
+    padding-left: 5px;
 }
-.product-main-image-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 670px;
-    width: 580px;
-    background-color: #f5f6f8;
-}
-.product1-blue-headphone{
-   display: flex;
-    height: 85px;
-    width: 100 px;
-    margin-top: 7px;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f6f8;
-}
-.product1-black-headphone{
-    display: flex;
-    height: 85px;
-    width: 100 px;
-    margin-top: 7px;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f6f8;
-}
+.product1-blue-headphone,
+.product1-black-headphone,
 .product1-orange-headphone{
     display: flex;
-    height: 85px;
-    width: 100 px;
-    margin-top: 7px;
     justify-content: center;
     align-items: center;
-    background-color: #f5f6f8;
+    height: 150px;
+    width: 95px;
+    background-color: azure;
+}
+.product1-blue-headphone img,
+.product1-black-headphone img,
+.product1-orange-headphone img {
+    width: 90px;
+}
+.product-main-image-area{
+    background-color: azure;
+}
+.product-description{
+    height: 868.4px;
+    width: 80%;
+    background-color: greenyellow;
 }
