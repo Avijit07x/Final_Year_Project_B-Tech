@@ -127,7 +127,8 @@ a {
 }
 
 /* Nav Logo */
-.navbar .navbar-logo {
+.navbar .navbar-logo,
+footer .navbar-logo {
     height: 35px;
 }
 
@@ -1251,13 +1252,94 @@ a {
     right: 0;
 }
 
+/* Footer */
+footer {
+    background-color: #f4f7f9;
+    padding: 6%;
+    width: 100%;
+}
 
+.top-footer {
+    display: flex;
+    gap: 90px;
+}
 
+.social-area,
+.account-area,
+.information-area,
+.contact-us-area {
+    width: 20%;
+}
 
+.social-area div {
+    margin-bottom: 25px;
+    color: #010f1c;
+    font-size: 1.1rem;
+}
 
+.social-area div:nth-child(3) a {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: all 0.3s ease-out;
+}
 
+.social-area div:nth-child(3) a:hover {
+    background-color: #0989FF;
+    color: white;
+    transition: all 0.3s ease-out;
+}
 
+.information-area h3,
+.account-area h3,
+.contact-us-area h3 {
+    font-size: 1.4rem;
+    color: #010f1c;
+    margin-bottom: 20px;
+}
 
+.information-area ul li,
+.account-area ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 0.89rem;
+    color: #55585B;
+    transition: all 0.3s ease-out;
+}
+
+.information-area ul li a:hover,
+.account-area ul li a:hover,
+.contact-us-area>div>h4 a:hover,
+.contact-us-area>div:nth-child(3) div a:hover {
+    color: #0989FF;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us-area div {
+    margin-top: 15px;
+}
+
+.contact-us-area>div>span {
+    color: #55585B;
+}
+
+.contact-us-area>div>h4 a {
+    font-size: 1.3rem;
+    color: #010f1c;
+}
+
+.contact-us-area>div:nth-child(3) div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #55585B;
+}
 
 
 
