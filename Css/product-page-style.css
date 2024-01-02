@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -12,7 +13,7 @@ header {
 
 /* productpage bredcrab style */
 .productpage-breadcrumbs {
-  margin: 1% 5% ;
+    padding: 1% 5%;
 }
 
 .productpage-breadcrumbs i {
@@ -38,32 +39,31 @@ header {
 /* Product details area style */
 .productpage-product-details-area {
     display: flex;
-    height: 985px;
-    width: 90%;
-    margin: 1% 5%;
-    background-color: aqua;
+    width: 100%;
+    padding: 1% 5%;
 }
-.productpage-product-image-left{
+
+.productpage-product-image-left {
     display: flex;
-    height: 670px;
+    /* height: 670px; */
     width: 50%;
 }
-.productpage-product-description-right{
-    display: flex;
-    height: 870px;
-    width: 50%;justify-content: flex-end;
 
-    background-color: green;
+.productpage-product-description-right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
 }
-.product-mini-image-area{
-    height: 670;
+
+.product-mini-image-area {
     width: 15%;
     min-width: 90px;
     padding-left: 5px;
 }
+
 .product1-blue-headphone,
 .product1-black-headphone,
-.product1-orange-headphone{
+.product1-orange-headphone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,16 +71,26 @@ header {
     width: 95px;
     background-color: azure;
 }
+
 .product1-blue-headphone img,
 .product1-black-headphone img,
 .product1-orange-headphone img {
     width: 90px;
 }
-.product-main-image-area{
+
+.product-main-image-area {
     background-color: azure;
 }
-.product-description{
-    height: 868.4px;
+
+.product-description {
     width: 80%;
-    background-color: greenyellow;
+    background-color: azure;
+}
+.product-category{
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-size: large;
+    color: gray;
+}
+.product-name-title{
+
 }
