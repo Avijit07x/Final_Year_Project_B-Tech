@@ -54,3 +54,18 @@ window.addEventListener("scroll", () => {
     .getElementById("allCategoryDropDown")
     .classList.remove("allCatDropDown");
 });
+
+// Back To Top
+let backToTopBtn = document.querySelector(".back-to-top-btn");
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+document.addEventListener("scroll", () => {
+  let backToTop = document.querySelector(".back-to-top");
+  if (window.scrollY > 300) {
+    backToTop.classList.add("hidden");
+  } else {
+    backToTop.classList.remove("hidden");
+  }
+});

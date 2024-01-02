@@ -422,6 +422,35 @@ footer .navbar-logo {
 }
 
 /* Main Content */
+/* .back-to-top */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: -60px;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.hidden {
+    visibility: visible;
+    opacity: 1;
+    bottom: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.back-to-top-btn {
+    background-color: #010f1c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+
+}
+
 /* Hero Section */
 .hero {
     width: 100%;
