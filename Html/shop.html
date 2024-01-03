@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="../Css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;500&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-only-space"></div>
+
+    </header>
+    <main>
+        <div class="shop-page-breadcrumbs breadcrumb pt-150 pb-50">
+            <h3 class="breadcrumb-title">Shop</h3>
+            <ul class="breadcrumb-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+
+        </div>
+        <div class="shop-container">
+            <div class="shop-side-bar">
+                <div class="shop-price-filter">
+                    <h3 class="shop-section-heading no-border">Price Fliter</h3>
+                    <input type="range" name="price-filter" min="0" max="1199">
+                    <div class="price-filter-text-and-btn">
+                        <span class="price-filter-text">$0 - $1199</span>
+                        <button class="price-filter-btn">Filter</button>
+                    </div>
+                </div>
+                <div class="shop-product-status">
+                    <h3 class="shop-section-heading">Product Status</h3>
+                    <ul class="product-status-list">
+                        <li>
+                            <input type="checkbox" id="status-on-sale" name="status-on-sale" value="On Sale">
+                            <label for="status-on-sale"> On Sale</label>
+                        </li>
+                        <li><input type="checkbox" id="status-in-stock" name="status-in-stock" value="In Stock">
+                            <label for="status-in-stock"> In Stock</label>
+                        </li>
+                        <li><input type="checkbox" id="status-out-of-stock" name="status-out-of-stock"
+                                value="Out of Stock">
+                            <label for="status-out-of-stock"> Out of Stock</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop-categories-list">
+                    <h3 class="shop-section-heading">Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Headphones<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Mobile Tablets<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">CPU Heat Pipes<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Smart Watch<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Bluetooth<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Clothing<span class="categories-product-number">4</span></a></li>
+                        <li><a href="#">Headphones<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Mobile Tablets<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">CPU Heat Pipes<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Smart Watch<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Bluetooth<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Clothing<span class="categories-product-number">4</span></a></li>
+                        <li><a href="#">Headphones<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Mobile Tablets<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">CPU Heat Pipes<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Smart Watch<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Bluetooth<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Clothing<span class="categories-product-number">4</span></a></li>
+                        <li><a href="#">Headphones<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Mobile Tablets<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">CPU Heat Pipes<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Smart Watch<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Bluetooth<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Clothing<span class="categories-product-number">4</span></a></li>
+                        <li><a href="#">Headphones<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Mobile Tablets<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">CPU Heat Pipes<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Smart Watch<span class="categories-product-number">3</span></a></li>
+                        <li><a href="#">Bluetooth<span class="categories-product-number">2</span></a></li>
+                        <li><a href="#">Clothing<span class="categories-product-number">4</span></a></li>
+                        
+                    </ul>
+                </div>
+                <div class="shop-top-rated-products">
+                    <h3 class="shop-section-heading">Top Rated Products</h3>
+                    <div class="rated-product-main">
+                        <div class="rated-product-img"><img src="../assets/images/tranding-products/headphone-1.png" alt="headphone" srcset=""></div>
+                        <div class="rated-product-content">
+                            <div class="rated-product-review">
+                                
+                    <span class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <span class="review-number">(5)</span>
+                            </div>
+                            <h4 class="rated-product-title"><a href="">Gaming Headphone</a></h4>
+                            <p class="rated-product-price">
+                                <span class="rated-regular-price price-line-through">$130.00</span>
+                                <span class="rated-sale-price">$127.00</span></p>
+                        </div>
+                    </div>
+                    <div class="rated-product-main">
+                        <div class="rated-product-img"><img src="../assets/images/tranding-products/headphone-1.png" alt="headphone" srcset=""></div>
+                        <div class="rated-product-content">
+                            <div class="rated-product-review">
+                                
+                    <span class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <span class="review-number">(5)</span>
+                            </div>
+                            <h4 class="rated-product-title"><a href="">Gaming Headphone</a></h4>
+                            <p class="rated-product-price">
+                                <span class="rated-regular-price">$130.00</span>
+                                <span class="rated-sale-price"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-popular-brands">
+                    <h3 class="shop-section-heading">Popular Brands</h3>
+                    <div class="popular-brands-main">
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-1.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-2.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-3.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-4.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-5.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-6.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-7.png" alt="" srcset=""></div>
+                        <div class="popular-brands-img-box"><img src="../assets/brand/brand-8.png" alt="" srcset=""></div>
+                    </div>
+                </div>
+                <div class="shop-reset-filter">
+                    <h3 class="shop-section-heading">Reset Filter</h3>
+                    <button class="shop-filter-reset-btn">Reset Filter</button>
+                </div>
+            </div>
+            <div class="shop-product-section"></div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>

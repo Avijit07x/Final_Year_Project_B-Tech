@@ -15,6 +15,14 @@ html {
 .pb-20{
     padding-bottom: 20px;
 }
+.pt-150{
+    padding-top: 150px;
+
+} 
+.pb-50{
+    padding-bottom: 50px;
+
+}
 /* font-family: 'Jost', sans-serif; */
 /* font-family: 'Ubuntu', sans-serif; */
 
@@ -307,7 +315,7 @@ a {
 }
 .breadcrumb-list {
     display: flex;
-    gap: 25px;
+    gap: 32px;
     position: relative;
 }
 .breadcrumb-list li::marker {
@@ -883,6 +891,230 @@ footer {
 .bottom-footer img {
     width: 60px;
 }
+
+/*Shop page Style*/
+.header-only-space{
+    height: 111px;
+    box-shadow: 0 2px 6px #010f1c29;
+    background-color: red;
+}
+.shop-page-breadcrumbs.breadcrumb {
+    padding: 110px 6% 50px;
+}
+h3.breadcrumb-title{
+font-weight: 500;
+font-size: 44px;
+line-height: 1;
+margin-bottom: 6px;
+}
+
+
+.shop-container {
+    padding: 0 6% 115px;
+    display: flex;
+}
+/*shop page side bar*/
+.shop-side-bar{
+    width: 25%;
+}
+h3.shop-section-heading {
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+
+}
+h3.shop-section-heading.no-border {
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 14px;
+}
+
+.shop-side-bar{
+    
+    color: #55585B;
+}
+.shop-side-bar h3, .shop-side-bar h4, .shop-side-bar h5, .shop-side-bar h4 a{
+color: #010F1C;
+}
+.shop-side-bar>div {
+    margin-bottom: 20px;
+}
+
+/*Shop price Filter*/
+.shop-price-filter input[type="range"]{
+width: 100%;
+}
+.price-filter-text-and-btn {
+    display: flex;
+    justify-content: space-between;
+    /*color: #55585B;*/
+}
+button.price-filter-btn {
+    padding: 3px 21px;
+    background: #f5f5f5;
+    border: 0;
+    color: #010F1C;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+button.price-filter-btn:hover {
+
+    background-color: #010F1C;
+    
+    color: #fff;
+}
+
+span.price-filter-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #010F1C;
+}
+
+/*Shop product status*/
+ul.product-status-list {
+    list-style: none;
+    font-size: 1rem;
+}
+ul.product-status-list li:not(:last-child) {
+    margin-bottom: 4px;
+    
+}
+
+/*Shop product categories list*/
+ul.categories-list {
+    /*list-style-position: inside;*/
+    list-style: none;
+    height: 288px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+}
+ul.categories-list li {
+    padding-right: 8px;
+}
+ul.categories-list li::marker {
+    color: #e7e7e7;
+}
+ul.categories-list li:not(:last-child){
+    margin-bottom: 10px;
+}
+ul.categories-list li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 16px;
+}
+ul.categories-list li a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #e7e7e7;
+    left: 0;
+    border-radius: 50%;
+}
+span.categories-product-number {
+    border: 1px solid #EAEAEA;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px 6px 3px;
+    font-weight: 500;
+    line-height: 1;
+}
+ul.categories-list li a:hover{
+    color:#0989FF;
+}
+ul.categories-list li a:hover span.categories-product-number, ul.categories-list li a:hover:before {
+    background-color: #0989FF;
+    color:#fff;
+}
+
+
+/*Shop top Rated product */
+.rated-product-main {
+    display: flex;
+    gap: 15px;
+}
+
+.rated-product-img img {
+    width: 70px;
+    height: 70px;
+    background: #f2f2f2;
+    object-fit: cover;
+}
+
+.rated-product-main  span.review-icon {
+    font-size: 12px;
+    color: #ffb21d;
+    margin-right: 1px;
+}
+
+.rated-product-main span.review-number {
+    font-size: 12px;
+}
+.rated-product-main h4.rated-product-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+p.rated-product-price {
+    font-size: .9rem;
+}
+
+.rated-product-price span.rated-regular-price.price-line-through {
+    text-decoration: line-through;
+}
+
+/*Shop popular brands */
+.popular-brands-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular-brands-img-box {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/*Shop Filter Reset */
+button.shop-filter-reset-btn {
+    padding: 9px 26px;
+    background: #010F1C;
+    border: 1px solid #010F1C;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+button.shop-filter-reset-btn:hover {
+   
+    background: transparent;
+   
+    color: #010F1C;
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 0px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background:#c0c0c0; 
+    border-radius: 0px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background:#c0c0c0; 
+    }
+    
+  
+
+
+
+
 
 
 
