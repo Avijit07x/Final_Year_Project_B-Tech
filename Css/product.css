@@ -76,7 +76,7 @@ a {
 
 }
 .social-section div a, .social-section div i {
-    font-size: 15px;
+    font-size: 0.938rem;
     color: #010f1ccc;
 }
 
@@ -105,14 +105,14 @@ a {
 }
 .nav-top div>span {
     color: rgb(222, 220, 220);
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
 /* <!-- Top Nav Link Sections --> */
 
 .bg-white .nav-link {
     color: 010f1ccc;
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
 .nav-links {
@@ -135,7 +135,7 @@ a {
     color: black;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    font-size: 12px;
+    font-size: 0.75rem;
     display: none;
     z-index: 2;
 }
@@ -161,7 +161,7 @@ a {
 }
 
 /* Nav Logo */
-.navbar .navbar-logo {
+.navbar .navbar-logo, footer .navbar-logo {
     height: 35px;
 }
 
@@ -226,11 +226,11 @@ a {
 
 .nav-account-text :nth-child(1) {
     color: #767A7D;
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
 .nav-account-text :nth-child(2) {
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 
 /* Nav Cart  */
@@ -255,7 +255,7 @@ a {
 .nav-cart-number {
     background-color: #fd4b6b;
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
     display: inline-block;
     height: 25px;
     width: 25px;
@@ -392,13 +392,13 @@ ul.product-img-list li:first-child img {
     font-family: 'Jost', sans-serif;
 }
 .product-details-area p.product-category, .product-details-area .product-in-stock span.review-text, .product-details-area p.product-short-descriptions, .product-details-area .product-price span.regular-price, .product-details-area p.variation-title, .product-details-area .product-quantity-add-cart p.product-quantity-text,  .product-details-area p.product-sku, .product-details-area p.product-tag, .product-details-area span.product-share-text, .product-details-area ul.product-offer-list li, .product-details-area .product-payment, .product-description-tab-container p.product-description  {
-    font-size: 16px;
+    font-size: 1rem;
     color: #595d5e;
     font-weight: 400;
 }
 
 .product-details-area h3.product-title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 15px;
@@ -418,15 +418,15 @@ ul.product-img-list li:first-child img {
     background: #f1f8ff;
     padding: 5px 15px;
     /* display: inline-block; */
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .product-details-area .product-in-stock span.review-icon {
     color: #ffb21d;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .product-details-area .product-in-stock span.review-text, .product-details-area p.variation-title, .product-details-area .product-quantity-add-cart p.product-quantity-text {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .product-details-area .product-price {
     word-spacing: 5px;
@@ -436,7 +436,7 @@ ul.product-img-list li:first-child img {
     text-decoration: line-through;
 }
 .product-details-area .product-price span.sale-price {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .product-details-area p.variation-title, .product-details-area .product-quantity-add-cart p.product-quantity-text{
@@ -484,7 +484,7 @@ background-color: orange;
     border: 1px solid #FD4B6B;
     padding: 10px 20px;
     background: #fd4b6b0d;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: #fd4b6b;
 }
@@ -505,7 +505,7 @@ background-color: orange;
 .product-details-area span.product-quantity-minus button, .product-details-area span.product-quantity-plus button {
     border: 0px;
     background: transparent;
-    font-size: 17px;
+    font-size: 1.063rem;
     margin: 0 5px;
 }
 .product-details-area span.product-quantity-number input {
@@ -513,7 +513,7 @@ background-color: orange;
     background: transparent;
     width: 30px;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: 300;
 }
 /* Chrome, Safari, Edge, Opera */
@@ -535,7 +535,7 @@ background-color: orange;
     background-color: transparent;
     border: 1px solid #E0E2E3;
     color: #010F1C;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: 300;
 }
 .product-details-area .quantity-and-cart-button button.add-to-cart:hover{
@@ -548,7 +548,7 @@ background-color: orange;
     background: #0989FF;
     border: 0;
     color: #fff;
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 .product-details-area button.buy-now:hover {
    
@@ -607,7 +607,7 @@ background-color: orange;
     gap: 40px;
     border-bottom: 1px solid #595d5e6b;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #595d5e;;
 }
 .product-description-tab-container .product-tab-body {
@@ -621,12 +621,12 @@ background-color: orange;
 }
 h4.product-category {
     color: #010F1C;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 15px;
 }
 
 .product-description-tab-container h3.product-title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 15px;
@@ -649,17 +649,21 @@ span.tab-title:hover:after {
     border-bottom: 1px solid #55585b73;
     
 }
+
+.related-product {
+    padding-bottom: 115px;
+}
 .heading-area {
     text-align: center;
     margin-bottom: 40px;
 }
 
 .heading-area h2.main-heading {
-    font-size: 44px;
+    font-size: 2.75rem;
 }
 .heading-area p.sub-heading {
     color: #0989FF;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .related-product-container {
     display: flex;
@@ -675,20 +679,20 @@ span.tab-title:hover:after {
 .related-single-product span.product-reguler-price {
     text-decoration: line-through;
     color: #595d5e;
-    font-size: 15px;
+    font-size: 0.938rem;
 }
 .related-single-product h3.product-title{
     margin-bottom: 10px;
 }
 .related-single-product h3.product-title a{
     font-weight: 400;
-    font-size: 23px;
+    font-size: 1.438rem;
 
 }
 .related-single-product p.product-category{
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 0.938rem;
     color: #595d5e;
     margin-top: 10px;
 }
@@ -741,17 +745,19 @@ a.add-to-cart {
 }
 .cart-wishlist-panel {
     position: absolute;
-    top: 20px;
+    top: 80px;
     right: -200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 1px 1px #f1f1f1;
     border-radius: 1px;
     transition: .3s ease;;
    
 }
+.cart-wishlist-panel span{
 
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
 .related-single-product:hover .cart-wishlist-panel{
 
     transition: .3s ease;
@@ -767,4 +773,114 @@ span.add-to-cart-icon i:hover, span.wishlist-icon i:hover {
     background: #010f1c;
     color: #fff;
     transition: .3s ease;
+}
+
+
+/* Footer */
+footer {
+    background-color: #f4f7f9;
+    padding: 6% 6% 2% 6%;
+    width: 100%;
+}
+
+.top-footer {
+    display: flex;
+    gap: 90px;
+}
+
+.social-area,
+.account-area,
+.information-area,
+.contact-us-area {
+    width: 20%;
+}
+
+.social-area div {
+    margin-bottom: 25px;
+    color: #010f1c;
+    font-size: 1.1rem;
+}
+
+.social-area div:nth-child(3) a {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: all 0.3s ease-out;
+}
+
+.social-area div:nth-child(3) a:hover {
+    background-color: #0989FF;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.information-area h3,
+.account-area h3,
+.contact-us-area h3 {
+    font-size: 1.4rem;
+    color: #010f1c;
+    margin-bottom: 20px;
+}
+
+.information-area ul li,
+.account-area ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 0.89rem;
+    color: #55585B;
+    transition: all 0.3s ease-out;
+}
+
+.information-area ul li a:hover,
+.account-area ul li a:hover,
+.contact-us-area>div>h4 a:hover,
+.contact-us-area>div:nth-child(3) div a:hover {
+    color: #0989FF;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us-area div {
+    margin-top: 15px;
+}
+
+.contact-us-area>div>span {
+    color: #55585B;
+}
+
+.contact-us-area>div>h4 a {
+    font-size: 1.3rem;
+    color: #010f1c;
+}
+
+.contact-us-area>div:nth-child(3) div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #55585B;
+}
+
+.bottom-footer {
+    margin-top: 3%;
+    padding: 2% 0;
+    border-top: 1px solid rgba(1, 15, 28, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-footer img {
+    width: 60px;
+}
+
+
+
+/*media query*/
+@media only screen and(max-width=1100px) {
+    
 }
