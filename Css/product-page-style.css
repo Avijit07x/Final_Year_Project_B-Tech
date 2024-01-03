@@ -17,16 +17,16 @@ header {
 }
 
 .productpage-breadcrumbs i {
-    color: gray;
+    color: #55585B;
 }
 
 .productpage-dot {
-    color: gray;
+    color: #55585B;
     font-size: 1.5cm;
 }
 
 .productpage-breadcrumbs a {
-    color: gray;
+    color: #55585B;
     text-decoration: none;
     font-family: 'Baloo Bhai 2', sans-serif;
     font-size: large;
@@ -67,30 +67,93 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 95px;
-    background-color: azure;
+    height: 100px;
+    width: 75px;
+    background-color: #f5f6f8;
 }
 
-.product1-blue-headphone img,
-.product1-black-headphone img,
+.product1-cyan-headphone img,
+.product1-darkgray-headphone img,
 .product1-orange-headphone img {
     width: 90px;
 }
 
 .product-main-image-area {
-    background-color: azure;
+    background-color: #f5f6f8;
 }
-
+.productdescription,
+.product-category,
+.product-review,
+.product-small-description{
+    padding: 1%;
+}
 .product-description {
     width: 80%;
-    background-color: azure;
 }
 .product-category{
     font-family: 'Baloo Bhai 2', sans-serif;
     font-size: large;
-    color: gray;
+    color: #55585B;
 }
 .product-name-title{
-
+    font-size: 28px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+}
+.product-availability,
+.stars,
+.number-of-reviews{
+    padding: 0% 2% 0% 0%;
+}
+.product-availability{
+    font-family: 'Jost', sans-serif;
+    color: blue;
+    font-weight: 700;
+    font-size: 15px;
+}
+.stars i{
+    color:#ffb21d;
+    font-size:smaller;
+}
+.number-of-reviews{
+    font-family: 'Jost', sans-serif;
+    color: #55585B;
+}.product-small-description{
+    font-family: 'Jost', sans-serif; 
+    color: #55585B;
+}
+.product-price span{
+    padding-right: 1%;
+}
+.reguler-price{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    color: #767a7d;
+    text-decoration: line-through;
+}
+.current-price{
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    color: #010F1C;
+    font-weight: bolder;
+}
+.product-color h4{
+    color: #010F1C;
+    font-size: 15px;
+    font-family: 'Jost', sans-serif;
+}
+.color-option span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.cyan{
+    background-color: cyan;
+}
+.darkgray{
+    background-color: #484848;
+}
+.orange{
+    background-color: orange;
 }
