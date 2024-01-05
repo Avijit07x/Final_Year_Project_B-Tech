@@ -45,7 +45,6 @@ header {
 
 .productpage-product-image-left {
     display: flex;
-    /* height: 670px; */
     width: 50%;
 }
 
@@ -61,13 +60,14 @@ header {
     padding-left: 5px;
 }
 
-.product1-blue-headphone,
-.product1-black-headphone,
+.product1-cyan-headphone,
+.product1-darkgray-headphone,
 .product1-orange-headphone {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 4%;
     width: 75px;
     background-color: #f5f6f8;
 }
@@ -75,16 +75,18 @@ header {
 .product1-cyan-headphone img,
 .product1-darkgray-headphone img,
 .product1-orange-headphone img {
-    width: 90px;
+    width: 70px;
 }
 
 .product-main-image-area {
     background-color: #f5f6f8;
 }
-.productdescription,
+
 .product-category,
+.product-name-title,
 .product-review,
-.product-small-description{
+.product-small-description,
+.cart-section{
     padding: 1%;
 }
 .product-description {
@@ -156,4 +158,36 @@ header {
 }
 .orange{
     background-color: orange;
+}
+.flash-sale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 5%;
+    border: 2px solid #FD4B6B;
+}
+.flash-sale-text, .flash-sale-timer{
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FD4B6B;
+    letter-spacing: 1%;
+}
+.flash-sale-text h4{
+    display: inline;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FD4B6B;
+}
+.cart-section h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    padding: 2%;
+}
+.product-quantity-addtocart{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
 }
