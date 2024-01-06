@@ -64,7 +64,8 @@
             <nav class="s-nav-bottom">
                 <!-- ===========S-Nav-Logo============ -->
                 <div class="s-nav-logo">
-                    <a href=""><img src="../assets/Logo/electrokart-high-resolution-logo-transparent.png" alt="logo"></a>
+                    <a href=""><img src="../assets/Logo/electrokart-high-resolution-logo-transparent.png"
+                            alt="logo"></a>
                 </div>
                 <!-- ===============S-Nav-Items=============== -->
                 <div class="s-nav-list-item">
@@ -119,8 +120,62 @@
         </header>
         <!-- Main content -->
         <main class="checkout-main">
-            
+            <!-- Breadcrumb -->
+            <div class="checkout-breadcrumb">
+                <h1>Checkout</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Checkout</li>
+                </ul>
+            </div>
+            <!-- ==========Checkout Area========== -->
+            <div class="checkout-area">
+                <div class="left-container">
+                    <!-- Login Area  -->
+                    <div class="login-area">
+                        <div class="login-header">
+                            <span>Returning customer?</span> <span class="visible-login">Click here to login</span>
+                        </div>
+                        <div class="login-form">
+                            <form action="/login" method="post">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                                <div class="check-forgot-container">
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" id="myCheckbox">
+                                        <label for="myCheckbox">Remember me</label>
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ==========Coupon Area========== -->
+                    <div class="coupon-area">
+                        <div class="coupon-header">
+                            <span>Have a coupon?</span> <span class="visible-coupon">Click here to enter your
+                                code</span>
+                        </div>
+                        <div class="coupon-form">
+                            <form action="">
+                                <label for="coupon">Coupon Code :</label>
+                                <input type="coupon" id="coupon" name="coupon" placeholder="Coupon">
+                                <button type="submit">Apply</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    abcd
+                </div>
+            </div>
         </main>
+        <script src="../Js/chekout.js"></script>
     </body>
 
 </html>

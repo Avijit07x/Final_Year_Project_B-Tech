@@ -8,12 +8,20 @@
     --custom-font: 'Jost', sans-serif;
     --custom-blue: #0989FF;
     --custom-black: #010F1C;
+    --custom-border: #D5D8DB;
+}
+
+input {
+    outline: none;
 }
 
 /* .s-header */
 .s-header {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    background-color: #ffff;
+    box-shadow: 0px 2px 6px #010f1c29;
 }
+
 
 /* .s-nav-top */
 .s-nav {
@@ -74,15 +82,20 @@
 }
 
 .s-nav-top-right>ul>li ul {
-    background-color: red;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
     list-style: none;
     position: absolute;
     width: 100%;
+    z-index: 1;
+    box-shadow: 0 1px 3px #03041c1f;
     display: none;
 }
 
 /* S-nav-bottom */
 .s-nav-bottom {
+    background-color: #fff;
     width: 100%;
     padding: 16px 6%;
     font-family: var(--custom-font);
@@ -105,6 +118,7 @@
     gap: 15px;
     color: var(--custom-black);
 }
+
 /* S-Nav-search */
 .s-nav-search {
     background-color: #f8f8f8;
@@ -123,9 +137,10 @@
     position: relative;
     width: 100%;
     height: 50px;
-    padding: 0 35px 0 15px;
+    padding: 0 40px 0 15px;
     font-family: var(--custom-font);
     transition: all 0.2s ease-out;
+    caret-color: #55585b;
 }
 
 .s-nav-search input:focus {
@@ -136,7 +151,7 @@
 .s-nav-search i {
     color: #55585b;
     position: absolute;
-    right: 10px;
+    right: 15px;
 }
 
 /* S-Nav Cart  */
@@ -164,6 +179,7 @@
 
 .s-nav-cart-number {
     background-color: var(--custom-blue);
+    font-weight: bold;
     color: white;
     font-size: 12px;
     display: inline-block;
@@ -176,4 +192,141 @@
     position: absolute;
     margin-top: -10px;
     margin-left: -8px;
+}
+
+/* checkout-main */
+.checkout-main {
+    padding: 6%;
+    font-family: var(--custom-font);
+    background-color: #eff1f5;
+}
+
+/* .checkout-breadcrumb */
+.checkout-breadcrumb h1 {
+    font-size: 2.7rem;
+    color: var(--custom-black);
+    margin-bottom: 10px;
+}
+
+.checkout-breadcrumb ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #55585b;
+}
+
+.checkout-breadcrumb ul li:first-child {
+    list-style: none;
+}
+
+/* .checkout-area */
+.checkout-area {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    width: 60%;
+}
+
+.right-container {
+    width: 40%;
+}
+
+/* User login  and Coupon Area*/
+.login-header,
+.coupon-header {
+    width: 100%;
+    padding: 8px 20px;
+    border: 1.5px dashed #d1d4d8;
+    margin: 20px 0;
+}
+
+.login-header span:nth-child(2),
+.coupon-header span:nth-child(2) {
+    cursor: pointer;
+    color: var(--custom-blue);
+    text-decoration: underline;
+}
+
+/* Login Form */
+.login-form,
+.coupon-form {
+    margin: 20px 0;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    display: none;
+}
+
+.login-form form,
+.coupon-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form form label,
+.coupon-form form label {
+    width: fit-content;
+}
+
+.login-form form input,
+.coupon-form form input {
+    font-family: var(--custom-font);
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 15px;
+    border: 1px solid var(--custom-border);
+    transition: all 250ms ease-out;
+    font-size: 1rem;
+}
+
+.login-form form input:focus,
+.coupon-form input:focus {
+    border: 1px solid var(--custom-black);
+    transition: all 250ms ease-out;
+}
+
+.check-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 7px;
+    width: 18px;
+}
+
+.login-form .forgot a {
+    text-decoration: none;
+    color: var(--custom-blue);
+}
+
+.login-form form button,
+.coupon-form button {
+    border: none;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    font-family: var(--custom-font);
+    background-color: var(--custom-black);
+    transition: all 0.3s ease-out;
+}
+
+.login-form form button:hover,
+.coupon-form button:hover {
+    background-color: var(--custom-blue);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
