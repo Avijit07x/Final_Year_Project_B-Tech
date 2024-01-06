@@ -6,6 +6,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* :root {
+    --my-font: 'Roboto', sans-serif;
+} */
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -205,9 +210,7 @@ footer .navbar-logo {
 .nav-cart a:hover #heart-icon #Stroke-3,
 .nav-cart a:hover svg path {
     stroke: #10d2f5;
-    transition: all;
-    transition-duration: 250ms;
-    transition-timing-function: ease-out;
+    transition: all 250ms ease-out;
 }
 
 .nav-cart {
