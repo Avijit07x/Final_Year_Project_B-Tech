@@ -87,7 +87,7 @@ header {
 .product-review,
 .product-small-description,
 .cart-section{
-    padding: 1%;
+    padding: 2% 0%;
 }
 .product-description {
     width: 80%;
@@ -181,13 +181,71 @@ header {
     font-weight: bolder;
     color: #FD4B6B;
 }
+/* cart section style */
 .cart-section h3{
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     padding: 2%;
 }
 .product-quantity-addtocart{
-    padding: 2%;
+    padding: 2% 0%;
     display: flex;
     justify-content: space-between;
+}
+.product-quantity-controler{
+   width: 25%;
+   padding: 2%;
+   background-color: #f5f6f8;
+}
+.product-quantity{
+    font-size: 20px;
+    position: relative;
+    left: 18px;
+    padding: 4%;
+}
+.quantity-minus{
+    position: relative;
+    top: -6px;
+    padding: 4%;
+}
+.quantity-plus{
+    position: relative;
+    left: 38px;
+    padding: 4%;
+}
+.quantity-plus:hover,
+.quantity-minus:hover{
+    color: #0989ff;
+    background-color: white;
+    border-radius: 50%;
+}
+.add-to-cart{
+    width: 70%;
+    background-color: white;
+    border: 1px solid #767a7d;
+    color: #010F1C;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.add-to-cart:hover{
+    background-color: #010F1C;
+    color: white;
+    transition-duration: 500ms;
+}
+.buy-now {
+    width: 100%;
+    padding: 2%;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #0989ff;
+    border-color: white;
+    box-shadow: none;
+    text-align: center;
+    color: white;
+}
+.buy-now:hover{
+    background-color: #010F1C;
+    transition-duration: 500ms;
 }
