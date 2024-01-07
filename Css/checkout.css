@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 :root {
@@ -13,6 +14,11 @@
 
 input {
     outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
 /* .s-header */
@@ -219,21 +225,10 @@ input {
     list-style: none;
 }
 
-/* .checkout-area */
-.checkout-area {
+/* .verify-area */
+.verify-area {
     margin-top: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left-container {
-    width: 60%;
-}
-
-.right-container {
-    width: 40%;
+    width: calc(60% - 31.1px);
 }
 
 /* User login  and Coupon Area*/
@@ -252,7 +247,7 @@ input {
     text-decoration: underline;
 }
 
-/* Login Form */
+/* Login Form and Coupon Form */
 .login-form,
 .coupon-form {
     margin: 20px 0;
@@ -263,7 +258,8 @@ input {
 }
 
 .login-form form,
-.coupon-form form {
+.coupon-form form,
+.checkout-left {
     display: flex;
     flex-direction: column;
 }
@@ -274,7 +270,8 @@ input {
 }
 
 .login-form form input,
-.coupon-form form input {
+.coupon-form form input,
+.checkout-left input {
     font-family: var(--custom-font);
     height: 50px;
     margin: 10px 0;
@@ -285,7 +282,9 @@ input {
 }
 
 .login-form form input:focus,
-.coupon-form input:focus {
+.coupon-form input:focus,
+.checkout-left input:focus,
+.checkout-left textarea:focus {
     border: 1px solid var(--custom-black);
     transition: all 250ms ease-out;
 }
@@ -305,6 +304,7 @@ input {
 .checkbox-container input[type="checkbox"] {
     margin-right: 7px;
     width: 18px;
+    height: 17px;
 }
 
 .login-form .forgot a {
@@ -329,4 +329,279 @@ input {
     background-color: var(--custom-blue);
     transition: all 0.3s ease-out;
     cursor: pointer;
+}
+
+/* <!-- ==========Checkout Area========== --> */
+.checkout-area form {
+    display: flex;
+    gap: 50px;
+}
+
+.checkout-left {
+    width: 60%;
+    background-color: #fff;
+    padding: 50px;
+    color: var(--custom-black);
+}
+
+.checkout-right {
+    width: 40%;
+    padding: 50px;
+    background-color: #fff;
+    color: var(--custom-black);
+}
+
+/* Checkout Left */
+.checkout-area form .star {
+    color: red;
+}
+
+.checkout-left h3,
+.checkout-right h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.checkout-left .name-area,
+.checkout-left .state-area {
+    display: flex;
+    gap: 40px;
+}
+
+.checkout-left .name-area div,
+.checkout-left .state-area>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-left label {
+    width: fit-content;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.checkout-left textarea {
+    outline: none;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    font-family: var(--custom-font);
+    font-size: 1rem;
+    border: 1px solid var(--custom-border);
+    transition: all 250ms ease-out;
+}
+
+/* Checkout Right  */
+.checkout-right {
+    height: fit-content;
+}
+
+.checkout-right ul {
+    list-style: none;
+}
+
+.checkout-right ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.checkout-right ul li:not(:last-child) {
+    border-bottom: 1px solid #E0E2E3;
+}
+
+.checkout-right ul .product-list p:first-child {
+    color: #55585B;
+}
+
+.checkout-right ul .product-list span {
+    color: var(--custom-black);
+    font-weight: 500;
+}
+
+.checkout-right ul .subtotal p:last-child,
+.checkout-right ul .shipping span {
+    color: var(--custom-blue);
+}
+
+.checkout-right .shipping div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.checkout-right .shipping div input {
+    margin-left: 5px;
+}
+
+.checkout-right ul li:last-child,
+.checkout-right ul li:first-child {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* .checkout-payment */
+.checkout-payment {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E2E3;
+}
+
+
+.checkout-payment div label {
+    font-weight: 500;
+}
+
+.checkout-payment div {
+    margin-top: 15px;
+}
+
+.checkout-payment .checkout-payment-info div {
+    position: absolute;
+    background-color: #f6f7f9;
+    height: 20px;
+    width: 20px;
+    top: -25px;
+    rotate: 45deg;
+}
+
+.checkout-payment .checkout-payment-info {
+    position: relative;
+    background-color: #f6f7f9;
+    padding: 20px;
+    font-size: 0.90rem;
+    display: none;
+}
+
+/* checkout-submit */
+.checkout-submit button {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    color: white;
+    font-family: var(--custom-font);
+    background-color: var(--custom-blue);
+    transition: all 0.3s ease-out;
+}
+
+.checkout-submit button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--custom-black);
+    transition: all 0.3s ease-out;
+}
+
+/* Footer */
+.s-footer {
+    font-family: var(--custom-font);
+}
+
+footer {
+    background-color: #f4f7f9;
+    padding: 6% 6% 2% 6%;
+    width: 100%;
+}
+
+footer .navbar-logo {
+    height: 35px;
+}
+
+.top-footer {
+    display: flex;
+    gap: 90px;
+}
+
+.social-area,
+.account-area,
+.information-area,
+.contact-us-area {
+    width: 20%;
+}
+
+.social-area div {
+    margin-bottom: 25px;
+    color: #010f1c;
+    font-size: 1.1rem;
+}
+
+.social-area div:nth-child(3) a {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: all 0.3s ease-out;
+}
+
+.social-area div:nth-child(3) a:hover {
+    background-color: #0989FF;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.information-area h3,
+.account-area h3,
+.contact-us-area h3 {
+    font-size: 1.4rem;
+    color: #010f1c;
+    margin-bottom: 20px;
+}
+
+.information-area ul li,
+.account-area ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 0.89rem;
+    color: #55585B;
+    transition: all 0.3s ease-out;
+}
+
+.information-area ul li a:hover,
+.account-area ul li a:hover,
+.contact-us-area>div>h4 a:hover,
+.contact-us-area>div:nth-child(3) div a:hover {
+    color: #0989FF;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us-area div {
+    margin-top: 15px;
+}
+
+.contact-us-area>div>span {
+    color: #55585B;
+}
+
+.contact-us-area>div>h4 a {
+    font-size: 1.3rem;
+    color: #010f1c;
+}
+
+.contact-us-area>div:nth-child(3) div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #55585B;
+}
+
+.bottom-footer {
+    margin-top: 3%;
+    padding: 2% 0;
+    border-top: 1px solid rgba(1, 15, 28, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-footer img {
+    width: 60px;
 }

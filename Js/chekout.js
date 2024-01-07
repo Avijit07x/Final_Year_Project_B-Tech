@@ -17,3 +17,14 @@ coupon.addEventListener("click", () => {
     couponForm.style.display = "block";
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".payment-list").forEach((label) => {
+    label.addEventListener("click", () => {
+      const infoDiv = label.nextElementSibling;
+      document.querySelectorAll(".checkout-payment-info").forEach((div) => {
+        div.style.display = div === infoDiv ? "block" : "none";
+      });
+    });
+  });
+});
