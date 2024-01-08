@@ -107,6 +107,12 @@ a {
 .s-nav-top-right>ul>li {
     color: var(--custom-black);
     position: relative;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.s-nav-top-right>ul>li i {
+    margin-left: 5px;
 }
 
 .s-nav-top-right>ul>li ul {
@@ -116,8 +122,10 @@ a {
     list-style: none;
     position: absolute;
     width: 100%;
-    z-index: 1;
-    box-shadow: 0 1px 3px #03041c1f;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: none;
 }
 
@@ -395,14 +403,14 @@ a {
     gap: 50px;
 }
 
-.checkout-left {
+.checkout-area form .checkout-left {
     width: 60%;
     background-color: #fff;
     padding: 50px;
     color: var(--custom-black);
 }
 
-.checkout-right {
+.checkout-area form .checkout-right {
     width: 40%;
     padding: 50px;
     background-color: #fff;
@@ -434,13 +442,13 @@ a {
     flex-direction: column;
 }
 
-.checkout-left label {
+.checkout-area form .checkout-left label {
     width: fit-content;
     font-weight: 500;
     margin-top: 10px;
 }
 
-.checkout-left textarea {
+.checkout-area form .checkout-left textarea {
     outline: none;
     margin-top: 10px;
     padding: 10px;
