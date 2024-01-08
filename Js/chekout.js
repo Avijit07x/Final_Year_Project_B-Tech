@@ -1,3 +1,14 @@
+// Sticky nav
+document.addEventListener("scroll", () => {
+  let header = document.querySelector(".s-header");
+  if (window.scrollY > 120) {
+    header.classList.remove("sticky");
+  } else {
+    header.classList.add("sticky");
+  }
+});
+
+// Return Customer login
 let login = document.querySelector(".visible-login");
 login.addEventListener("click", () => {
   let loginForm = document.querySelector(".login-form");
@@ -8,6 +19,7 @@ login.addEventListener("click", () => {
   }
 });
 
+// Coupon Area
 let coupon = document.querySelector(".visible-coupon");
 coupon.addEventListener("click", () => {
   let couponForm = document.querySelector(".coupon-form");
@@ -18,6 +30,7 @@ coupon.addEventListener("click", () => {
   }
 });
 
+// Payment Section
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".payment-list").forEach((label) => {
     label.addEventListener("click", () => {
@@ -27,4 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+});
+
+// Back To Top
+let backToTopBtn = document.querySelector(".back-to-top-btn");
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+document.addEventListener("scroll", () => {
+  let backToTop = document.querySelector(".back-to-top");
+  if (window.scrollY > 300) {
+    backToTop.classList.add("hidden");
+  } else {
+    backToTop.classList.remove("hidden");
+  }
 });

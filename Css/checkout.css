@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -23,14 +24,42 @@ a {
 
 /* .s-header */
 .s-header {
-    position: relative;
-    background-color: #ffff;
+    z-index: 3;
+    position: sticky;
+    top: 0;
     box-shadow: 0px 2px 6px #010f1c29;
+    animation: fadeInDown 0.5s ease-in-out 0ms;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sticky {
+    display: none;
 }
 
 
 /* .s-nav-top */
 .s-nav {
+    width: 100%;
+    position: relative;
+    background-color: #ffff;
+    box-shadow: 0px 2px 6px #010f1c29;
+}
+
+/* S-NavTop-Info */
+.s-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     width: 100%;
     font-family: var(--custom-font);
@@ -39,7 +68,6 @@ a {
     border-bottom: 1px solid rgba(1, 15, 28, .1);
 }
 
-/* S-NavTop-Info */
 .s-nav-top>div {
     display: flex;
     gap: 30px;
@@ -65,12 +93,6 @@ a {
 .s-nav-top .info-item div:nth-child(2) {
     width: 1px;
     background-color: #010f1c1a;
-}
-
-.s-nav-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 /* .s-nav-top-right */
@@ -198,6 +220,42 @@ a {
     position: absolute;
     margin-top: -10px;
     margin-left: -8px;
+}
+
+/* main */
+/* .back-to-top */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: -60px;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.back-to-top-btn:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+}
+
+.hidden {
+    visibility: visible;
+    opacity: 1;
+    bottom: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.back-to-top-btn {
+    background-color: #010f1c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease-out;
 }
 
 /* checkout-main */
@@ -604,4 +662,5 @@ footer .navbar-logo {
 
 .bottom-footer img {
     width: 60px;
+    margin-right: 5px;
 }

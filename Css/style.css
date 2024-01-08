@@ -4,16 +4,12 @@
     box-sizing: border-box;
     user-select: none;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* :root {
     --my-font: 'Roboto', sans-serif;
 } */
-
-
-html {
-    scroll-behavior: smooth;
-}
 
 /* font-family: 'Jost', sans-serif; */
 /* font-family: 'Ubuntu', sans-serif; */
@@ -24,9 +20,7 @@ html {
 
 .blue-hover:hover {
     color: #10d2f5;
-    transition: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition: all 0.3s ease-out;
 }
 
 a {
@@ -435,6 +429,12 @@ footer .navbar-logo {
     opacity: 0;
 }
 
+.back-to-top-btn:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+}
+
 .hidden {
     visibility: visible;
     opacity: 1;
@@ -451,7 +451,7 @@ footer .navbar-logo {
     text-align: center;
     border-radius: 50px;
     border: none;
-
+    transition: all 0.3s ease-out;
 }
 
 /* Hero Section */
@@ -1384,6 +1384,7 @@ footer {
 
 .bottom-footer img {
     width: 60px;
+    margin-right: 5px;
 }
 
 
