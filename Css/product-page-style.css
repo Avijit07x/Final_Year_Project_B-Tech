@@ -178,7 +178,7 @@ header {
     display: inline;
     font-family: 'Jost', sans-serif;
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #FD4B6B;
 }
 /* cart section style */
@@ -248,4 +248,27 @@ header {
 .buy-now:hover{
     background-color: #010F1C;
     transition-duration: 500ms;
+}
+.sku-section,
+.category-section,
+.tag-section{
+    display: flex;
+}
+.category-q,
+.sku-q,
+.tag-q{
+    padding-right: 2%;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: #010F1C;
+    font-weight: bold;
+}
+.category-a,
+.sku-a,
+.tag-a{
+    padding-right: 2%;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: #55585B;
+    font-weight: bold;
 }
