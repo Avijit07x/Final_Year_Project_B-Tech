@@ -8,6 +8,34 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Nav Drop-Down
+document.querySelectorAll(".s-dropDown").forEach((dropdown) => {
+  dropdown.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const clickedDropdown = event.currentTarget;
+
+    // Close other dropdowns
+    document.querySelectorAll(".s-dropDown-ul").forEach((element) => {
+      if (element !== clickedDropdown.nextElementSibling) {
+        element.classList.remove("show");
+      }
+    });
+    // Toggle the "show" class for the clicked dropdown
+    clickedDropdown.nextElementSibling.classList.toggle("show");
+  });
+});
+
+window.addEventListener("click", () => {
+  document.querySelectorAll(".s-dropDown-ul").forEach((element) => {
+    element.classList.remove("show");
+  });
+});
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".s-dropDown-ul").forEach((element) => {
+    element.classList.remove("show");
+  });
+});
+
 // Return Customer login
 let login = document.querySelector(".visible-login");
 login.addEventListener("click", () => {
