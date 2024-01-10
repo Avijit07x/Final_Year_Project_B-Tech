@@ -80,17 +80,27 @@ header {
 
 .product-main-image-area {
     background-color: #f5f6f8;
+    
 }
 
 .product-category,
 .product-name-title,
 .product-review,
 .product-small-description,
-.cart-section{
+.product-price,
+.product-color,
+.cart-section,
+.flash-sale,
+.more-product-details,
+.share-section,
+.benefits,
+.payment-option{
     padding: 2% 0%;
 }
 .product-description {
     width: 80%;
+    position: sticky;
+    top: 7000px;
 }
 .product-category{
     font-family: 'Baloo Bhai 2', sans-serif;
@@ -170,7 +180,6 @@ header {
 .flash-sale-text, .flash-sale-timer{
     font-family: 'Jost', sans-serif;
     font-size: 18px;
-    font-weight: bolder;
     color: #FD4B6B;
     letter-spacing: 1%;
 }
@@ -256,12 +265,12 @@ header {
 }
 .category-q,
 .sku-q,
-.tag-q{
+.tag-q,
+.share-text{
     padding-right: 2%;
     font-family: 'Jost', sans-serif;
     font-size: 15px;
     color: #010F1C;
-    font-weight: bold;
 }
 .category-a,
 .sku-a,
@@ -269,6 +278,71 @@ header {
     padding-right: 2%;
     font-family: 'Jost', sans-serif;
     font-size: 15px;
-    color: #55585B;
-    font-weight: bold;
+    color: #767a7d;
+}
+.share-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.share-option{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.facebook,
+.twitter,
+.linkedin,
+.vimeo{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #767a7d;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.facebook :hover,
+.twitter :hover,
+.linkedin :hover,
+.vimeo :hover{
+    
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 0.2px solid #0989ff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0989ff;
+}
+.facebook i:hover,
+.twitter i:hover,
+.linkedin i:hover,
+.vimeo i:hover{
+    color:white;
+}
+.facebook a,
+.twitter a,
+.linkedin a,
+.vimeo a{
+    text-decoration: none;
+    color: #484848;
+}
+.benefits i{
+    padding-right: 2%;
+}
+.benefits{
+ color: #767a7d;
+}
+.payment-option{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f6f8;
+
+}
+.payment-text{
+    line-height: 0.5cm;
 }
