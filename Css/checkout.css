@@ -291,20 +291,23 @@ a {
 }
 
 /* .checkout-breadcrumb */
-.checkout-breadcrumb h1 {
+.checkout-breadcrumb h1,
+.cart-breadcrumb h1{
     font-size: 2.7rem;
     color: var(--custom-black);
     margin-bottom: 10px;
 }
 
-.checkout-breadcrumb ul {
+.checkout-breadcrumb ul,
+.cart-breadcrumb ul {
     display: flex;
     align-items: center;
     gap: 30px;
     color: #55585b;
 }
 
-.checkout-breadcrumb ul li:first-child {
+.checkout-breadcrumb ul li:first-child,
+.cart-breadcrumb ul li:first-child {
     list-style: none;
 }
 
@@ -367,9 +370,13 @@ a {
 .login-form form input:focus,
 .coupon-form input:focus,
 .checkout-left input:focus,
-.checkout-left textarea:focus {
+.checkout-area form .checkout-left textarea:focus {
     border: 1px solid var(--custom-black);
     transition: all 250ms ease-out;
+}
+
+.login-area .login-form form>div>input {
+    width: 100%;
 }
 
 .check-forgot-container {

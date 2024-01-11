@@ -38,29 +38,34 @@ window.addEventListener("scroll", () => {
 
 // Return Customer login
 let login = document.querySelector(".visible-login");
-login.addEventListener("click", () => {
-  let loginForm = document.querySelector(".login-form");
-  if (loginForm.style.display === "block") {
-    loginForm.style.display = "none";
-  } else {
-    loginForm.style.display = "block";
-  }
-});
+if (login) {
+  login.addEventListener("click", () => {
+    let loginForm = document.querySelector(".login-form");
+    if (loginForm.style.display === "block") {
+      loginForm.style.display = "none";
+    } else {
+      loginForm.style.display = "block";
+    }
+  });
+}
 
 // Coupon Area
 let coupon = document.querySelector(".visible-coupon");
-coupon.addEventListener("click", () => {
-  let couponForm = document.querySelector(".coupon-form");
-  if (couponForm.style.display === "block") {
-    couponForm.style.display = "none";
-  } else {
-    couponForm.style.display = "block";
-  }
-});
+if (coupon) {
+  coupon.addEventListener("click", () => {
+    let couponForm = document.querySelector(".coupon-form");
+    if (couponForm.style.display === "block") {
+      couponForm.style.display = "none";
+    } else {
+      couponForm.style.display = "block";
+    }
+  });
+}
 
 // Payment Section
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".payment-list").forEach((label) => {
+let paymentList = document.querySelectorAll(".payment-list");
+if (paymentList) {
+  paymentList.forEach((label) => {
     label.addEventListener("click", () => {
       const infoDiv = label.nextElementSibling;
       document.querySelectorAll(".checkout-payment-info").forEach((div) => {
@@ -68,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
+}
 
 // Back To Top
 let backToTopBtn = document.querySelector(".back-to-top-btn");

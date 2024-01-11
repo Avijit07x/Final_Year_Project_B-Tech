@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../Css/checkout.css">
+        <link rel="stylesheet" href="../Css/cart.css">
     </head>
 
     <body>
@@ -175,175 +175,139 @@
                 </div>
             </div>
         </nav>
-        <!-- Main content -->
-        <main class="checkout-main">
+        <!-- Main -->
+        <main class="cart-main">
             <!-- back-to-top-btn -->
             <div class="back-to-top">
                 <button class="back-to-top-btn cursor-pointer"><i class="fa-solid fa-angle-up"></i></button>
             </div>
             <!-- Breadcrumb -->
-            <div class="checkout-breadcrumb">
-                <h1>Checkout</h1>
+            <div class="cart-breadcrumb">
+                <h1>Shopping Cart</h1>
                 <ul>
-                    <li>Home</li>
-                    <li>Checkout</li>
+                    <li><a href="">Home</a></li>
+                    <li>Shopping Cart</li>
                 </ul>
             </div>
-            <!-- ==========Verify Area========== -->
-            <div class="verify-area">
-                <!-- Login Area  -->
-                <div class="login-area">
-                    <div class="login-header">
-                        <span>Returning customer?</span> <span class="visible-login">Click here to login</span>
-                    </div>
-                    <div class="login-form">
-                        <form action="/login" method="post">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-                            <label for="password">Password</label>
-                            <div><input type="password" id="password" name="password" placeholder="Min. 6 character" required></div>
-                            <div class="check-forgot-container">
-                                <div class="checkbox-container">
-                                    <input type="checkbox" id="myCheckbox">
-                                    <label for="myCheckbox">Remember me</label>
+            <!-- cart-area -->
+            <div class="cart-area">
+                <div class="cart-left">
+                    <ul>
+                        <!-- cart-left header -->
+                        <li>
+                            <div>Products</div>
+                            <div>Price</div>
+                            <div>Quantity</div>
+                            <div></div>
+                        </li>
+                        <!-- cart-left product -->
+                        <li class="cart-area-product-item">
+                            <div><span><a href=""><img src="../assets/images/tranding-products/headphone-5.png"
+                                            alt=""></a></span>
+                                <span><a href="">Gaming Headphone</a></span>
+                            </div>
+                            <div>$80.00</div>
+                            <div>
+                                <div><span><svg _ngcontent-ng-c2270004052="" width="10" height="10" viewBox="0 0 10 2"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path _ngcontent-ng-c2270004052="" d="M1 1H9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span>
+                                    <span><input type="text" name="" id=""></span>
+                                    <span><svg _ngcontent-ng-c2270004052="" width="10" height="10" viewBox="0 0 10 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path _ngcontent-ng-c2270004052="" d="M5 1V9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path _ngcontent-ng-c2270004052="" d="M1 5H9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span>
                                 </div>
-                                <div class="forgot">
-                                    <a href="">Forgot Password?</a>
+                            </div>
+                            <div><button><i class="fa-solid fa-xmark"></i>Remove</button></div>
+                        </li>
+                        <li class="cart-area-product-item">
+                            <div><span><a href=""><img src="../assets/images/tranding-products/headphone-5.png"
+                                            alt=""></a></span>
+                                <span><a href="">Gaming Headphone</a></span>
+                            </div>
+                            <div>$80.00</div>
+                            <div>
+                                <div><span><svg _ngcontent-ng-c2270004052="" width="10" height="10" viewBox="0 0 10 2"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path _ngcontent-ng-c2270004052="" d="M1 1H9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span>
+                                    <span><input type="text" name="" id=""></span>
+                                    <span><svg _ngcontent-ng-c2270004052="" width="10" height="10" viewBox="0 0 10 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path _ngcontent-ng-c2270004052="" d="M5 1V9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path _ngcontent-ng-c2270004052="" d="M1 5H9" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span>
                                 </div>
                             </div>
-                            <button type="submit">Login</button>
-                        </form>
-                    </div>
-                </div>
-                <!-- ==========Coupon Area========== -->
-                <div class="coupon-area">
-                    <div class="coupon-header">
-                        <span>Have a coupon?</span> <span class="visible-coupon">Click here to enter your
-                            code</span>
-                    </div>
-                    <div class="coupon-form">
-                        <form action="">
-                            <label for="coupon">Coupon Code :</label>
-                            <input type="coupon" id="coupon" name="coupon" placeholder="Coupon">
-                            <button type="submit">Apply</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- ==========Checkout Area========== -->
-            <div class="checkout-area">
-                <form action="" method="post">
-                    <!-- ==========Checkout Left========= -->
-                    <div class="checkout-left">
-                        <h3>Billing Details</h3>
-                        <div class="name-area">
-                            <div><label for="first-name">First Name<span class="star">*</span></label>
-                                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-                            </div>
-                            <div>
-                                <label for="last-name">Last Name<span class="star">*</span></label>
-                                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <label for="company">Company name (optional)</label>
-                        <input type="text" id="company" name="company" placeholder="Example LTD.">
-                        <label for="country">Country / Region<span class="star">*</span></label>
-                        <input type="text" id="country" name="country" placeholder="United States (US)" required>
-                        <label for="street">Street address<span class="star">*</span></label>
-                        <input type="text" id="street" name="street" placeholder="House number and street name"
-                            required>
-                        <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
-                        <label for="city">Town / City<span class="star">*</span></label>
-                        <input type="text" id="city" name="city" placeholder="City" required>
-                        <div class="state-area">
-                            <div>
-                                <label for="state">State / County<span class="star">*</span></label>
-                                <input type="text" name="state" id="state" placeholder="Country" required>
-                            </div>
-                            <div>
-                                <label for="zipcode">
-                                    Postcode ZIP<span class="star">*</span>
-                                </label>
-                                <input type="text" name="zipcode" id="zipcode" placeholder="zip code" required>
-                            </div>
-                        </div>
-                        <label for="phone">Phone<span class="star">*</span></label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone" required>
-                        <label for="s-email">Email address<span class="star">*</span></label>
-                        <input type="s-email" name="s-email" id="s-email" placeholder="Email" required>
-                        <label for="order-notes">Order notes (optional)</label>
-                        <textarea name="order-notes" id="order-notes" cols="30" rows="10"
-                            placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
-                    </div>
-                    <!-- ============Checkout Right============ -->
-                    <div class="checkout-right">
-                        <h3>Your Order</h3>
-                        <ul>
-                            <li>
-                                <p>Product</p>
-                                <p>Total</p>
-                            </li>
-                            <li class="product-list">
-                                <p>Headphones Wireless <span>x 1</span></p>
-                                <p>$103.20</p>
-                            </li>
-                            <li class="subtotal">
-                                <p>Subtotal</p>
-                                <p>$103.20</p>
-                            </li>
-                            <li class="shipping">
-                                <p>Shipping</p>
+                            <div><button><i class="fa-solid fa-xmark"></i>Remove</button></div>
+                        </li>
+                    </ul>
+                    <!-- cart-left bottom  -->
+                    <div class="cart-left-bottom">
+                        <div>
+                            <form>
                                 <div>
-                                    <label>
-                                        Flat rate: <span>$20.00</span>
-                                        <input type="radio" name="shippingOption" value="flatRate">
-                                    </label>
-                                    <label>
-                                        Local pickup: <span>$25.00</span>
-                                        <input type="radio" name="shippingOption" value="localPickup">
-                                    </label>
-                                    <label>
-                                        Free shipping
-                                        <input type="radio" name="shippingOption" value="freeShipping">
-                                    </label>
+                                    <label for="couponCode">Coupon Code:</label>
                                 </div>
-                            </li>
-                            <li class="total">
-                                <p>Total</p>
-                                <p>$103.20</p>
-                            </li>
-                        </ul>
-                        <div class="checkout-payment">
-                            <div>
-                                <label class="payment-list">
-                                    <input type="radio" name="paymentOption" value="directBankTransfer">
-                                    Direct Bank Transfer
-                                </label>
-                                <div class="checkout-payment-info">
-                                    <div></div>
-                                    Make your payment directly into our bank account. Please use your Order ID as the
-                                    payment reference. Your order will not be shipped until the funds have cleared in
-                                    our account.
+                                <div>
+                                    <input type="text" name="couponCode" id="couponCode"
+                                        placeholder="Enter Coupon Code">
+                                    <input type="submit" value="Apply">
                                 </div>
-                            </div>
-                            <div>
-                                <label class="payment-list">
-                                    <input type="radio" name="paymentOption" value="chequePayment">
-                                    Cheque Payment
-                                </label>
-                                <div class="checkout-payment-info">
-                                    <div></div>
-                                    Make your payment directly into our bank account. Please use your Order ID as the
-                                    payment reference. Your order will not be shipped until the funds have cleared in
-                                    our account.
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                        <div class="checkout-submit">
-                            <button type="submit">Place Order</button>
+                        <div>
+                            <button>Clear Cart</button>
                         </div>
                     </div>
-                </form>
+                </div>
+                <!-- ============Cart-Right============ -->
+                <div class="cart-right">
+                    <ul>
+                        <li>
+                            <p>Subtotal</p>
+                            <p>$363.50</p>
+                        </li>
+                        <li class="shipping">
+                            <p>Shipping</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="shippingOption" value="flatRate">
+                                    Flat rate: <span>$20.00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="shippingOption" value="localPickup">
+                                    Local pickup: <span>$25.00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="shippingOption" value="freeShipping">
+                                    Free shipping
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Total</p>
+                            <p>$388.50</p>
+                        </li>
+                    </ul>
+                    <div>
+                        <button type="submit">Proceed to Checkout</button>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- Footer -->
