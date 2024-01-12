@@ -420,6 +420,7 @@ footer .navbar-logo {
 
 /* Main Content */
 /* .back-to-top */
+/* .back-to-top */
 .back-to-top {
     position: fixed;
     right: 20px;
@@ -438,7 +439,7 @@ footer .navbar-logo {
 .hidden {
     visibility: visible;
     opacity: 1;
-    bottom: 20px;
+    bottom: 30px;
     transition: all 0.3s ease-out;
 }
 

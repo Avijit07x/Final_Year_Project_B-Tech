@@ -292,14 +292,16 @@ a {
 
 /* .checkout-breadcrumb */
 .checkout-breadcrumb h1,
-.cart-breadcrumb h1{
+.cart-breadcrumb h1,
+.wishlist-breadcrumb h1 {
     font-size: 2.7rem;
     color: var(--custom-black);
     margin-bottom: 10px;
 }
 
 .checkout-breadcrumb ul,
-.cart-breadcrumb ul {
+.cart-breadcrumb ul,
+.wishlist-breadcrumb ul {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -307,7 +309,8 @@ a {
 }
 
 .checkout-breadcrumb ul li:first-child,
-.cart-breadcrumb ul li:first-child {
+.cart-breadcrumb ul li:first-child,
+.wishlist-breadcrumb ul li:first-child {
     list-style: none;
 }
 

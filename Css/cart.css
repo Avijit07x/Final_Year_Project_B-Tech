@@ -30,8 +30,9 @@
     list-style: none;
 }
 
-/* .cart-area .cart-left Header */
-.cart-area .cart-left ul li:first-child {
+/* .cart-area .cart-left Header wishlist-area-header */
+.cart-area .cart-left ul li:first-child,
+.wishlist-area ul li:first-child {
     background-color: #f1f3f4;
     font-size: 0.875rem;
     font-weight: 500;
@@ -44,7 +45,8 @@
     width: 100%;
 }
 
-.cart-area .cart-left ul li:first-child div:first-child {
+.cart-area .cart-left ul li:first-child div:first-child,
+.wishlist-area ul li:first-child div:first-child {
     padding-left: 30px;
 }
 
@@ -57,22 +59,26 @@
 }
 
 /* <!-- cart-left product --> */
-.cart-area .cart-left ul .cart-area-product-item div {
+.cart-area .cart-left ul .cart-area-product-item div,
+.wishlist-area ul .wishlist-area-product-item div {
     display: flex;
     align-items: center;
 }
 
-.cart-area .cart-left ul .cart-area-product-item>div:first-child>span:first-child {
+.cart-area .cart-left ul .cart-area-product-item>div:first-child>span:first-child,
+.wishlist-area ul .wishlist-area-product-item>div:first-child>span:first-child {
     background-color: #f1f3f4;
     margin-right: 20px;
 }
 
-.cart-area-product-item {
+.cart-area-product-item,
+.wishlist-area-product-item {
     border-bottom: 1px solid var(--custom-border);
     padding: 30px 0;
 }
 
-.cart-area .cart-left ul .cart-area-product-item img {
+.cart-area .cart-left ul .cart-area-product-item img,
+.wishlist-area .wishlist-area-product-item img {
     width: 100px;
     object-fit: contain;
 }
@@ -82,7 +88,6 @@
     padding: 5px 10px;
     border-radius: 50px;
 }
-
 
 .cart-area .cart-left ul .cart-area-product-item div:nth-child(3) span {
     margin: 0 5px;
@@ -95,11 +100,13 @@
     font-family: var(--custom-font);
 }
 
-.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) i {
+.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) i,
+.wishlist-area .wishlist-area-product-item div:nth-child(4) i {
     margin-right: 5px;
 }
 
-.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) button {
+.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) button,
+.wishlist-area ul .wishlist-area-product-item div:nth-child(4) button {
     font-family: var(--custom-font);
     color: #818487;
     background-color: white;
@@ -107,7 +114,8 @@
     transition: all 0.3s ease-out;
 }
 
-.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) button:hover {
+.cart-area .cart-left ul .cart-area-product-item div:nth-child(4) button:hover,
+.wishlist-area ul .wishlist-area-product-item div:nth-child(4) button:hover {
     color: red;
     cursor: pointer;
     transition: all 0.3s ease-out;

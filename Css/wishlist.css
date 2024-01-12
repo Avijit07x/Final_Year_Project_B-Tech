@@ -1,0 +1,55 @@
+@import url(../Css/checkout.css);
+@import url(../Css/cart.css);
+
+.wishlist-main {
+    padding: 6%;
+    font-family: var(--custom-font);
+    color: var(--custom-black);
+}
+
+.wishlist-area ul {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.wishlist-area ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlist-area ul li>div:first-child {
+    width: 50%;
+}
+
+.wishlist-area ul li>div:not(:first-child) {
+    width: 20%;
+}
+
+.wishlist-area ul .wishlist-area-product-item div:nth-child(3) button,
+.wishlist-area-bottom button {
+    background-color: var(--custom-blue);
+    font-family: var(--custom-font);
+    padding: 9px 26px;
+    font-size: 0.90rem;
+    font-weight: 500;
+    border: none;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.wishlist-area ul .wishlist-area-product-item div:nth-child(3) button:hover,
+.wishlist-area-bottom button:hover {
+    background-color: var(--custom-black);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.wishlist-area-bottom button {
+    margin-top: 20px;
+    border: 1px solid var(--custom-border);
+    background-color: #fff;
+    color: var(--custom-black);
+}
