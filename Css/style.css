@@ -7,12 +7,14 @@
     scroll-behavior: smooth;
 }
 
-/* :root {
+:root {
     --my-font: 'Roboto', sans-serif;
-} */
-
-/* font-family: 'Jost', sans-serif; */
-/* font-family: 'Ubuntu', sans-serif; */
+    --custom-font: 'Jost', sans-serif;
+    --custom-ff-oregano: 'Oregano', cursive;
+    --custom-blue: #0989FF;
+    --custom-black: #010F1C;
+    --custom-border: #D5D8DB;
+}
 
 .cursor-pointer {
     cursor: pointer;
@@ -273,6 +275,7 @@ footer .navbar-logo {
     flex-direction: column;
     justify-content: space-evenly;
     display: none;
+    z-index: 2;
 }
 
 .nav-bottom-all-category>ul li {
@@ -297,6 +300,7 @@ footer .navbar-logo {
     }
 
     100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -336,37 +340,16 @@ footer .navbar-logo {
     display: none;
 }
 
-.nav-bottom-all-category ul li:nth-child(1):hover>ul {
-    display: block;
-}
-
-.nav-bottom-all-category ul li:nth-child(2)>ul {
-    background-color: white;
-    display: none;
-}
-
-.nav-bottom-all-category ul li:nth-child(2):hover>ul {
-    display: block;
-}
-
-.nav-bottom-all-category ul li:nth-child(3)>ul {
-    background-color: white;
-    display: none;
-}
-
+.nav-bottom-all-category ul li:nth-child(1):hover>ul,
+.nav-bottom-all-category ul li:nth-child(4):hover>ul,
+.nav-bottom-all-category ul li:nth-child(2):hover>ul,
 .nav-bottom-all-category ul li:nth-child(3):hover>ul {
     display: block;
 }
 
-.nav-bottom-all-category ul li:nth-child(4)>ul {
-    background-color: white;
-    display: none;
-}
-
-.nav-bottom-all-category ul li:nth-child(4):hover>ul {
-    display: block;
-}
-
+.nav-bottom-all-category ul li:nth-child(2)>ul,
+.nav-bottom-all-category ul li:nth-child(3)>ul,
+.nav-bottom-all-category ul li:nth-child(4)>ul,
 .nav-bottom-all-category ul li:nth-child(5)>ul {
     background-color: white;
     display: none;
@@ -459,7 +442,141 @@ footer .navbar-logo {
 .hero {
     width: 100%;
     height: 80vh;
+    min-height: 500px;
+    padding: 0 6%;
     background-color: #115061;
+    position: relative;
+}
+
+.shape-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    mix-blend-mode: luminosity;
+    opacity: 0.1;
+}
+
+.shape-2 {
+    position: absolute;
+    right: 28%;
+    bottom: 13%;
+}
+
+.shape-3 {
+    position: absolute;
+    right: 40%;
+    top: 10%;
+    mix-blend-mode: luminosity;
+}
+
+.shape-4 {
+    position: absolute;
+    left: 13%;
+    top: 13%;
+    mix-blend-mode: luminosity;
+}
+
+/* Slider-1 */
+.hero .slider-1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-1 .slider-content,
+.slider-1 .slider-img {
+    width: 40%;
+}
+
+.slider-1 .slider-img {
+    text-align: right;
+}
+
+.slider-1 .slider-content>div {
+    margin: 10px 0;
+}
+
+.slider-1 .slider-content .starting-price-area {
+    font-size: 1rem;
+    color: white;
+    animation: fadeInUp 1s;
+}
+
+.slider-1 .slider-content .starting-price-area .staring-price {
+    font-weight: bolder;
+}
+
+.slider-1 .slider-content .slider-title {
+    font-size: 3.5rem;
+    color: white;
+    animation: fadeInUp 1s .10s;
+}
+
+.slider-1 .slider-content .offer-percentage-area {
+    animation: fadeInUp 1s .20s;
+}
+
+.slider-1 .slider-content .offer-percentage-area,
+.slider-1 .slider-content .offer-percentage-area .offer-percentage {
+    font-family: var(--custom-ff-oregano);
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: white;
+}
+
+.slider-1 .slider-content .offer-percentage-area .offer-percentage {
+    color: #FFD43A;
+}
+
+.slider-1 .slider-content .slider-btn {
+    background-color: #fff;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 12px 30px;
+    border-radius: 7px;
+    font-size: 0.89rem;
+    transition: all 0.3s ease-out;
+    border: 1px solid var(--custom-border);
+    animation: fadeInUp 1s .20s;
+}
+
+.slider-1 .slider-content .slider-btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: 1px solid var(--custom-border);
+    transition: all 0.3s ease-out;
+}
+
+.slider-1 .slider-img img {
+    animation: fadeInLeft 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Product Category */
