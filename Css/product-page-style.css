@@ -40,12 +40,15 @@ header {
 .productpage-product-details-area {
     display: flex;
     width: 100%;
-    padding: 1% 5%;
+    padding: 2% 5% 8% 5%;
 }
 
 .productpage-product-image-left {
     display: flex;
     width: 50%;
+    height: 98%;
+    position: sticky;
+    top: 120px;
 }
 
 .productpage-product-description-right {
@@ -78,6 +81,10 @@ header {
     width: 70px;
 }
 
+.product-main-image-area{
+    position: sticky;
+    top: 120px;
+}
 .product-main-image-area img {
     background-color: #f5f6f8;
     
@@ -99,8 +106,6 @@ header {
 }
 .product-description {
     width: 80%;
-    position: sticky;
-    top: 7000px;
 }
 .product-category{
     font-family: 'Baloo Bhai 2', sans-serif;
@@ -341,8 +346,66 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #f5f6f8;
-
 }
 .payment-text{
     line-height: 0.5cm;
 }
+ /* description additional information and reviews nav section style  */
+
+.desc-addinfo-review-nav{
+    display: flex;
+    justify-content: center;
+
+}
+.description,
+.additional-info,
+.review{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #767a7d;
+    font-weight: 600;
+    padding:  5px 0px 5px 0px;
+}
+.description :hover,
+.additional-info :hover,
+.review :hover{
+    color: #010f1c;
+    cursor: pointer;
+}
+/* .description :active,
+.additional-info :active,
+.review :active{
+    border-bottom:2px solid #010F1C;
+} */
+.additional-info,
+.review{
+    padding: 5px 0px 5px 40px;
+}
+ /* description additional information and reviews nav section style starts */
+ .desc-addinfo-review-display{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0% 10% 0%;
+ }
+ .current-display{
+    width: 70%;
+ }
+ .description-product-catagory p{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    
+ }
+ .description-product-name{
+    font-size: 34px;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 1% ;
+ }
+ .description-about-product{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    line-height: 1.6;
+    word-spacing: 2px;
+    font-weight: 600;
+    color: #484848;
+ }
