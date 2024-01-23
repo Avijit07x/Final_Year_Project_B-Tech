@@ -257,6 +257,8 @@ header {
     border-color: white;
     box-shadow: none;
     text-align: center;
+    outline:none;
+    border: none;
     color: white;
 }
 .buy-now:hover{
@@ -389,12 +391,15 @@ header {
     padding: 5% 0% 8% 0%;
  }
  .current-display{
-    width: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
  }
 
  /* description display style start */
 
  .description-display{
+    width: 80%;
     display: none;
  }
  .description-product-catagory p{
@@ -417,7 +422,8 @@ header {
 }
 /* additional display style  */
 .additional-information-display{
-    /* display: none; */
+    display: none;
+    width: 80%;
 }
  .additional-information-table {
     width: 100%;
@@ -441,4 +447,213 @@ header {
     border: 1px solid #ddd;
     color: #55585B;
     border-left: none;
+}
+/* review display style  */
+.review-display{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.review-stats,
+.review-input{
+    width: 50%;
+    padding: 0% 1%;
+}
+/* costomer review style  */
+.customer-review{
+    width: 75%;
+    padding: 4% 5%;
+    border: 0.5px solid #ddd;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 50px;
+}
+.customer-review-text h3{
+    font-size: 20px;
+    color: #010F1C;
+    font-weight: 500;
+    padding-bottom: 1%;
+}
+.avarage-rating-container,
+.container-of-5star,
+.container-of-4star,
+.container-of-3star,
+.container-of-2star,
+.container-of-1star{
+    display: flex;
+    align-items: center;
+}
+.container-of-5star,
+.container-of-4star,
+.container-of-3star,
+.container-of-2star,
+.container-of-1star{
+    line-height: 26px;
+}
+.avarage-rating,
+.star-review{
+    padding-right: 2%;
+}
+.avarage-rating h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.star-review i{
+    color: #ffb21d;
+}
+.star-count{
+    font-size: 15px;
+    color: #a0a2a4; 
+    padding-right: 2%;
+}
+.total-percentage{
+    width: 79%;
+    height: 10px;
+    background-color: #edeeee;
+    margin-right: 2%;
+}
+.rated-percentage-5star,
+.rated-percentage-4star,
+.rated-percentage-3star,
+.rated-percentage-2star,
+.rated-percentage-1star{
+    height: 10px;
+    background-color: #ffb21d;
+    line-height: 26px;
+}
+.rated-percentage-5star{
+    width: 82%;
+}
+.rated-percentage-4star{
+    width: 30%;
+}
+.rated-percentage-3star{
+    width: 15%;
+}
+.rated-percentage-2star{
+    width: 6%;
+}
+.rated-percentage-1star{
+    width: 10%;
+}
+.percentage-of-rating{
+    font-size: 14px;
+    font-weight: 400;
+}
+.rating-and-detailed-review{
+    width: 85%;
+    
+    font-family: 'Jost', sans-serif;
+    
+}
+.rating-and-review-text h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 22px;
+    color: #010F1C;
+}
+.review-of-user1-container{
+    margin-bottom: 32px;
+}
+
+.review-of-user1-container,
+.review-of-user2-container{
+    display: flex
+}
+
+.image-user{  
+    margin-right: 4%;
+}
+.image-user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.small-star{
+    font-size: 10px;
+    color: #ffb21d;
+}
+.user-name h3{
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    color: #010F1C;
+}
+.review-dot{
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: rgb(168, 172, 176);
+}
+.review-date{
+    font-size: 14px;
+   color: #55585B;
+}
+.user-review p{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #55585B;
+}
+/* review-form-including Heading and instruction-style */
+.review-input{
+    font-family: 'Jost', sans-serif;
+}
+.review-the-product h3{
+    font-size: 28px;
+    font-weight: 500;
+    color:#010F1C;
+    margin-bottom: 4px;
+}
+.review-the-product p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #55585B;
+}
+.review-the-product{
+    margin-bottom: 8px;
+}
+.your-rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.your-rating p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #55585B;
+    margin-right: 8px;
+}
+.default-input-area-size{
+    padding: 17px 26px;
+    width: 100%;
+    border: 1px solid #E0E2E3 ;
+}
+.default-lebel{
+    position: relative;
+    left: 17px;
+    top: 11px;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+}
+.your-review textarea{
+    height: 165px;
+    resize:none;
+}
+.checkbox{
+    padding-bottom: 26px;
+}
+.checkbox label{
+    color: #55585B;
+    font-size: 15px;
+}
+.review-form form button{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 13px 45px;
+    background-color:#0989ff;
+    border: none;
 }
