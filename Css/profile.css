@@ -1,0 +1,115 @@
+/* universal style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+header {
+  height: 112px;
+  width: 100%;
+  background-color: burlywood;
+}
+
+.profile-page-main-continer {
+  width: 100%;
+  padding: 120px 6%;
+}
+
+.profile-page-inner-continer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-page-left-container {
+  width: 30%;
+  margin: 0px 12px;
+  box-shadow: 0 30px 50px #052f281f;
+}
+.profile-page-left-container button {
+  width: 100%;
+  padding: 14px 30px;
+  font-size: 15px;
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+}
+.profile-page-left-container button i {
+  padding-right: 7px;
+}
+.profile-page-right-container {
+  margin: 0px 12px;
+  width: 63%;
+  box-shadow: 0 30px 50px #052f281f;
+}
+.profile {
+  padding: 25px 30px 30px;
+}
+.login-section {
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.profile-description{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.imagearea img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  
+}
+.camera-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #0989ff;
+  position: relative;
+  bottom: 20px;
+  right: 29px;
+  border: 2px solid white;
+}
+.camera-icon:hover{
+  background-color: rgb(5, 250, 5);
+}
+.user-profile-data h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+.user-profile-data p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.logout {
+  width: 50%;
+  text-align: right;
+}
+.logout button{
+
+  background-color: white;
+  padding: 6px 18px;
+  border: 1px solid rgba(1,15,28,.12);
+  color: #010f1c;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color  0.5s ease-in-out;
+}
+
+
+.logout button:hover {
+  background-color: #0989ff;
+  color: white;
+}
