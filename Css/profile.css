@@ -30,6 +30,7 @@ header {
 
 .profile-page-left-container {
   width: 30%;
+  height: fit-content;
   margin: 0px 12px;
   box-shadow: 0 30px 50px #052f281f;
 }
@@ -57,38 +58,38 @@ header {
   align-items: center;
   padding-bottom: 80px;
 }
-.profile-description{
+.profile-description {
   width: 50%;
   display: flex;
   align-items: center;
 }
-.imagearea img {
+.profile-picture {
+  position: relative;
+}
+.profile-picture img {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  
+  margin-right: 16px;
 }
-.camera-icon {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
+.profile-picture i {
+  padding: 8px;
   border-radius: 50%;
   text-align: center;
-  line-height: 30px;
   background-color: #0989ff;
-  position: relative;
-  bottom: 20px;
-  right: 29px;
+  position: absolute;
+  bottom: 16px;
+  right: 6px;
   border: 2px solid white;
 }
-.camera-icon:hover{
+.profile-picture i:hover {
   background-color: rgb(5, 250, 5);
 }
-.user-profile-data h3{
+.user-profile-data h3 {
   font-size: 24px;
   font-weight: 700;
 }
-.user-profile-data p{
+.user-profile-data p {
   font-size: 14px;
   font-weight: 400;
 }
@@ -96,20 +97,72 @@ header {
   width: 50%;
   text-align: right;
 }
-.logout button{
-
+.logout button {
   background-color: white;
   padding: 6px 18px;
-  border: 1px solid rgba(1,15,28,.12);
+  border: 1px solid rgba(1, 15, 28, 0.12);
   color: #010f1c;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color  0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
-
-
 .logout button:hover {
   background-color: #0989ff;
   color: white;
+}
+.othernav-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download,
+.order,
+.wishlist,
+.giftbox {
+  text-align: center;
+  position: relative;
+  padding: 27px 30px 25px;
+}
+.download i,
+.order i,
+.wishlist i,
+.giftbox i {
+  font-size: 60px;
+}
+.download p,
+.order p,
+.wishlist p,
+.giftbox p {
+  height: 25px;
+  width: 25px;
+  color: white;
+  background-color: #0989ff;
+  border-radius: 50%;
+  position: absolute;
+}
+/* this line of code is written only for position the element on icon  */
+.download p {
+  top: 30px;
+  right: 39px;
+}
+.order p {
+  top: 26px;
+  right: 25px;
+}
+.wishlist p {
+  top: 24px;
+  right: 20px;
+}
+.giftbox p {
+  top: 17px;
+  right: 23px;
+}
+.download h4,
+.order h4,
+.wishlist h4,
+.giftbox h4 {
+  font-size: 18px;
+  font-weight: 600;
 }
