@@ -28,29 +28,29 @@
         <div class="profile-page-inner-continer">
           <!-- left tab section start  -->
           <div class="profile-page-left-container">
-            <button class="profile">
+            <button class="profile-button tab">
               <i class="fa-solid fa-user"></i>Profile
             </button>
-            <button class="information">
+            <button class="information-button tab">
               <i class="fa-solid fa-circle-info"></i>Information
             </button>
-            <button class="address">
+            <button class="address-button tab">
               <i class="fa-solid fa-location-dot"></i>Adress
             </button>
-            <button class="my-orders">
+            <button class="my-orders-button tab">
               <i class="fa-solid fa-clipboard"></i>MY Orders
             </button>
-            <button class="notification">
+            <button class="notification-button tab">
               <i class="fa-solid fa-bell"></i>Notification
             </button>
-            <button class="change-password">
+            <button class="change-password-button tab">
               <i class="fa-solid fa-lock"></i>Change Password
             </button>
           </div>
           <!-- left tab section end -->
           <!-- right tab description start -->
-          <!-- profile section start  -->
           <div class="profile-page-right-container">
+            <!-- profile section start  -->
             <div class="profile">
               <div class="login-section">
                 <div class="profile-description">
@@ -93,6 +93,26 @@
                   <h4>Giftt box</h4>
                 </div>
               </div>
+              <!-- other navigation tab start  -->
+            </div>
+            <!-- profilesection end  -->
+            <!-- personal information section starts -->
+            <div class="personal-information">
+              <h4>Personal Details</h4>
+              <form action="">
+                <div class="name"><i class="fa-regular fa-user"></i><input type="text" id="name" name="name" placeholder="Enter your name"></div>
+                <div class="email"><i class="fa-regular fa-envelope"></i><input type="email" id="email" name="email" placeholder="Enter your email"></div>
+                <div class="facebook"><i class="fa-brands fa-facebook-f"></i><input type="text" id="facebook" name="facebook" placeholder="Enter your facebook id"></div>
+                <div class="twitter"><i class="fa-brands fa-twitter"></i><input type="text" id="twitter" name="twitter" placeholder="Enter your twitter id"></div>
+                <div class="mobile"><i class="fa-solid fa-mobile-screen-button"></i><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter your mobile no"></div>
+                <div class="address"><i class="fa-solid fa-location-dot"></i><input type="email" id="email" name="email" placeholder="Enter your address"></div>
+                <select name="gender" id="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Others</option>
+                  <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Hi there, This is my bio.."></textarea>
+                </select>
+              </form>
             </div>
           </div>
         </div>
