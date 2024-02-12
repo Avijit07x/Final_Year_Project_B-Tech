@@ -52,7 +52,9 @@ header {
 }
 /* every right tab common style  */
 .profile,
-.personal-information {
+.personal-information,
+.address,
+.orders {
   padding: 25px 30px 30px;
   width: 100%;
   box-shadow: 0 30px 50px #052f281f;
@@ -229,6 +231,7 @@ header {
   padding: 2%;
   resize: none;
 }
+/* Address style  */
 .address {
   display: flex;
   padding: 25px 30px 30px;
@@ -273,4 +276,66 @@ header {
 .country-call-code,
 .country {
   margin-bottom: 10px;
+}
+/* My orders Styles */
+.order-table tr {
+  border: 0.5px solid #55585b;
+}
+.order-table td {
+  text-align: left;
+}
+.order-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.order-id,
+.table-heading,
+.action-button,
+.status,
+.product-title {
+  padding: 16px 24px;
+}
+.table-heading,
+.order-id {
+  font-size: 14px;
+  font-weight: bold;
+}
+.order-id {
+  color: #0989ff;
+}
+.product-title {
+  font-size: 14px;
+  color: #010f1c;
+  font-weight: 400;
+}
+.status {
+  font-size: 14px;
+  font-weight: 400;
+}
+.st-pending {
+  color: #6364db;
+}
+.st-need-reply {
+  color: #d93d1e;
+}
+.st-resolved {
+  color: #08af5c;
+}
+.st-on-hold {
+  color: #ffb422;
+}
+.action-button button {
+  padding: 6px 18px;
+  background-color: #ffffff;
+  border: 1px solid rgba(1, 15, 28, 0.12);
+  font-size: 14px;
+  font-weight: 500;
+  color: #010f1c;
+  transition: background-color 0.5s ease-in-out;
+}
+.action-button button:hover {
+  background-color: #0989ff;
+  border: 1px solid currentColor;
+  /* border: none; */
+  color: white;
 }
