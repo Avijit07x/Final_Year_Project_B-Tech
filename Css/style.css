@@ -233,6 +233,33 @@ footer .navbar-logo {
   margin-left: -8px;
 }
 
+/* Mobile-Hamburger-Menu */
+.mobile-hamburger-menu {
+  position: fixed;
+  padding: 30px 30px;
+  z-index: 5;
+  top: 0;
+  right: -70vw;
+  height: 100vh;
+  width: 70vw;
+  background: white;
+  visibility: hidden;
+  transition: all ease-out 0.4s;
+}
+
+.mobile-hamburger-menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-hamburger-menu-close-btn {
+  outline: none;
+  border: none;
+  background: #ececec;
+  padding: 5px 10px;
+}
+
 /* Nav Bottom */
 .nav-bottom {
   background-color: #fff;
@@ -1511,59 +1538,67 @@ footer {
   .nav-top,
   .navbar-search,
   .nav-account,
-  .nav-cart,
+  .nav-cart .middle-nav-cart,
   .nav-bottom,
   .header-nav {
     display: none;
   }
 
   .navbar {
-    position: sticky;
+    position: relative;
     top: 0;
-    height: 170px;
+    height: 100px;
     padding: 20px 30px;
   }
 
-  .navbar .navbar-logo {
-    height: 60px;
-    width: 233px;
+  .middle-nav .nav-cart {
+    width: 200px;
   }
-  .nav-hamburger svg {
-    height: 39px;
+
+  .middle-nav .nav-cart .middle-nav-wishlist {
+    display: block;
+    margin-left: auto;
   }
+
   .navbar .nav-hamburger {
     display: block;
   }
+  .nav-hamburger svg {
+    height: 30px;
+  }
 
+  .hero {
+    height: auto;
+  }
   /* .product-category */
   .product-category {
     flex-wrap: wrap;
   }
 
-  .product-category-div {
+  /* .product-category-div {
     height: 800px;
     width: 100%;
-  }
-
+  } */
+  /* 
   .product-category-div div {
     height: 550px;
     width: 550px;
-  }
+  } */
 
-  .product-category-div img {
+  /* .product-category-div img {
     height: 260px;
     width: 220px;
-  }
+  } */
 
-  .product-category-div a {
+  /* .product-category-div a {
     margin-top: 20px;
     margin-bottom: 43px;
     font-size: 3.7rem;
-  }
-
+  } */
+  /* 
   .product-category-div p {
     font-size: 2.4rem;
-  }
+  } */
 
   /* features-area */
   .features-area {
@@ -1594,9 +1629,25 @@ footer {
     font-size: 2rem;
   }
 
+
+
+
+  
   /* Testing */
   .hero .slider-1 {
     flex-wrap: wrap;
+  }
+  .slider-1 .slider-content {
+    width: 100%;
+  }
+  /* .back-to-top {
+    display: none;
+  } */
+  .ga-slider {
+    flex-wrap: wrap;
+  }
+  .ga-slider .ga-slider-text {
+    width: 100%;
   }
   .small-product-area {
     flex-wrap: wrap;

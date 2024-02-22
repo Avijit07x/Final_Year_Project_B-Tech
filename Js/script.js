@@ -69,3 +69,19 @@ document.addEventListener("scroll", () => {
     backToTop.classList.remove("hidden");
   }
 });
+
+// Mobile hamburger Menu
+const mobileHamburgerBtn = document.querySelector(".nav-hamburger");
+const mobileHamburgerMenu = document.querySelector(".mobile-hamburger-menu");
+const mobileHamburgerMenuCloseBtn = document.querySelector(
+  ".mobile-hamburger-menu-close-btn"
+);
+mobileHamburgerBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  mobileHamburgerMenu.style.visibility = "visible";
+  mobileHamburgerMenu.style.right = "0";
+});
+mobileHamburgerMenuCloseBtn.addEventListener("click", () => {
+  mobileHamburgerMenu.style.visibility = "hidden";
+  mobileHamburgerMenu.style.right = "-70vw";
+});
